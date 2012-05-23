@@ -25,10 +25,10 @@
 
 ## Deploy
 
-  echo "Deploying to ${CONFIG_ABSOLUTE_DIR}"
+  echo "Deploying to $(absolute_path ${CONFIG_DIR})"
 
   for f in ${CONFIG_LIST}
   do
-      ln -s ${DIR}/${f} ${CONFIG_DIR}/
+      ln -s $(absolute_path ${DIR})/${f} ${CONFIG_DIR}/
       echo "... ${f}"
   done

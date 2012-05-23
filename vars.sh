@@ -8,3 +8,7 @@ readonly CONFIG_BASIC=`cat <<EOF
 05_package.el
 ex-window-system-config.el
 EOF`
+
+absolute_path() {
+    echo $(cd $(dirname $1) && pwd)/$(basename $1)
+}

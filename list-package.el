@@ -1,4 +1,3 @@
-;;(load-file "./05_package.el")
 (package-install 'auto-complete)
 (package-install 'deferred)
 (package-install 'e2wm)

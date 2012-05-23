@@ -6,5 +6,5 @@
 
 ## Cleanup
 
-  echo "Cleaning ${CONFIG_ABSOLUTE_DIR}"
+  echo "Cleaning $(absolute_path ${CONFIG_DIR})"
   find ${CONFIG_DIR} -type l -exec rm {} \;
