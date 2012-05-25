@@ -37,7 +37,7 @@
 ;;
 ;;   ref. http://e-arrows.sakura.ne.jp/2010/03/macros-in-emacs-el.html
 ;;----------------------------------------
-(defmacro append-to-list (to lst) 
+(defmacro append-to-list (to lst)
  `(setq ,to (append ,lst ,to)))
 
 (defmacro req (lib &rest body)

@@ -5,5 +5,7 @@
 (package-install 'melpa)
 (package-install 'org)
 (package-install 'php-mode)
+(package-install 'ruby-mode)
 (package-install 'window-layout)
 (package-install 'yaml-mode)
+(package-install 'color-theme-sanityinc-tomorrow)

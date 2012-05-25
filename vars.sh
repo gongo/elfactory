@@ -6,6 +6,8 @@ readonly CONFIG_BASIC=`cat <<EOF
 00_defvars.el
 01_basic.el
 05_package.el
+10_color-theme.el
+10_auto-complete.el
 ex-window-system-config.el
 EOF`
 
