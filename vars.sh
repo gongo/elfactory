@@ -1,5 +1,4 @@
-readonly CONFIG_DIR=`dirname $0`/../config
-readonly CONFIG_ABSOLUTE_DIR=$(cd $(dirname ${CONFIG_DIR}) && pwd)/$(basename ${CONFIG_DIR})
+readonly CONFIG_DIR=$HOME/.emacs.d/config
 
 readonly CONFIG_BASIC=`cat <<EOF
 00_defmacros.el

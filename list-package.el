@@ -1,3 +1,8 @@
+;;
+;; package-install でインストールを行う elisp 一覧
+;;
+
+(package-refresh-contents)
 (package-install 'auto-complete)
 (package-install 'deferred)
 (package-install 'e2wm)
