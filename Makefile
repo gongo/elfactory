@@ -10,5 +10,9 @@ deploy-basic:
 install-basic:
 	$(EMACS) --batch -l $(EMACSINIT) -l list-package.el
 
+install-el-get:
+	$(EMACS) --batch -l $(EMACSINIT) -l list-el-get.el
+
 clean:
 	./clean.sh
+
