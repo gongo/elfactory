@@ -2,7 +2,7 @@
 
 (unless (require 'el-get nil t)
   (with-current-buffer
-      (find-file-noselect "el-get/el-get-install.el")
+      (find-file-noselect "vendor/el-get-install.el")
     (end-of-buffer)
     (eval-print-last-sexp)))
 
