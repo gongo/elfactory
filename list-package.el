@@ -6,7 +6,6 @@
 (package-install 'auto-complete)
 (package-install 'deferred)
 (package-install 'e2wm)
-(package-install 'helm)
 (package-install 'markdown-mode)
 (package-install 'melpa)
 (package-install 'org)
