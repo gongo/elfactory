@@ -16,8 +16,11 @@
 ## Target Emacs Lisp List
 
   case $1 in
+      min)
+          CONFIG_LIST=$CONFIG_LIST_MIN
+          ;;
       basic)
-          CONFIG_LIST=$CONFIG_BASIC
+          CONFIG_LIST=$CONFIG_LIST_BASIC
           ;;
       *)
           ;;
