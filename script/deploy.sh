@@ -22,16 +22,20 @@
       basic)
           CONFIG_LIST=$CONFIG_LIST_BASIC
           ;;
+      all)
+          CONFIG_LIST=$CONFIG_LIST_ALL
+          ;;
       *)
+          CONFIG_LIST=$CONFIG_LIST_ALL
           ;;
   esac
 
 ## Deploy
 
-  echo "Deploying to $(absolute_path ${CONFIG_DIR})"
+  echo "Deploying to ${CONFIG_DIR}"
 
   for f in ${CONFIG_LIST}
   do
-      ln -s $(absolute_path ${DIR})/${f} ${CONFIG_DIR}/
-      echo "... ${f}"
+      ln -s ${f} ${CONFIG_DIR}/
+      echo "... $(basename ${f})"
   done

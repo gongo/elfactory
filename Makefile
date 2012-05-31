@@ -5,10 +5,13 @@ EMACSINIT=$(HOME)/.emacs.el
 all: deploy-basic
 
 deploy-min:
-	./deploy.sh min
+	./script/deploy.sh min
 
 deploy-basic:
-	./deploy.sh basic
+	./script/deploy.sh basic
+
+deploy-all:
+	./script/deploy.sh all
 
 install-elisp: install-basic install-el-get
 
@@ -19,5 +22,5 @@ install-el-get:
 	$(EMACS) --batch -l $(EMACSINIT) -l list-el-get.el
 
 clean:
-	./clean.sh
+	./script/clean.sh
 
