@@ -1,0 +1,22 @@
+# .emacs.d deploy system for [gongo](http://gongo.github.com/)
+
+## Environment
+
+- Emacs 24.0+ (Mac OS X, Linux)
+- bash
+
+## Setup
+
+yet
+
+## Tree
+
+yet
+
+## Deploy
+
+yet
+
+## License
+
+This project is licensed under the MAHALO License. See LICENSE for details.
