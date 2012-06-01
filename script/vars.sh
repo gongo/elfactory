@@ -4,7 +4,8 @@ absolute_path() {
 
 # Deploy file directory
 
-  readonly FACTORY_DIR="$(absolute_path `dirname $0`/../config)"
+  readonly FACTORY_DIR="$(absolute_path `dirname $0`/..)"
+  readonly FACTORY_CONFIG_DIR="${FACTORY_DIR}/config"
 
 # Directory to deploy
 
@@ -19,7 +20,6 @@ absolute_path() {
 #        all = all file
 #
 
-  readonly CONFIG_LIST_MIN="`ls ${FACTORY_DIR}/{0?_,ex-}*.el`"
-  readonly CONFIG_LIST_BASIC="${CONFIG_LIST_MIN} `ls ${FACTORY_DIR}/1?_*.el`"
-  readonly CONFIG_LIST_ALL="`ls ${FACTORY_DIR}/*.el`"
-
+  readonly CONFIG_LIST_MIN="$(ls ${FACTORY_CONFIG_DIR}/{0?_,ex-}*.el)"
+  readonly CONFIG_LIST_BASIC="${CONFIG_LIST_MIN} $(ls ${FACTORY_CONFIG_DIR}/1?_*.el)"
+  readonly CONFIG_LIST_ALL="$(ls ${FACTORY_CONFIG_DIR}/*.el)"

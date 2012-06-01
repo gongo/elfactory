@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# ./deploy.sh {basic|xxx}
+# ./deploy.sh {min|basic|all}
 #
 
 ## Set up the environment.
