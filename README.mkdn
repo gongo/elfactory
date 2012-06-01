@@ -7,15 +7,97 @@
 
 ## Setup
 
-yet
+    $ [ -d $HOME/.emacs.d ] || mkdir $HOME/.emacs.d
+    $ cd $HOME/.emacs.d
+    $ git clone git://github.com/gongo/dot.emacs.d.factory.git 
 
 ## Tree
 
-yet
+    .
+    |-- LICENSE
+    |-- Makefile
+    |-- README.mkdn
+    |-- config
+    |   |-- 00_defmacros.el
+    |   |-- 00_defvars.el
+    |   |-- 01_basic.el
+    |   |-- .
+    |   |-- .
+    |   `-- ex-window-system-config.el
+    |-- el-get-recipes
+    |   |-- anything-rdefs.rcp
+    |   |-- .
+    |   |-- .
+    |   `-- id-manager.rcp
+    |-- init.el
+    |-- script
+    |   |-- clean.sh
+    |   |-- deploy.sh
+    |   |-- init.sh
+    |   `-- vars.sh
+    |-- site-lisp
+    |   |-- list-el-get.el
+    |   `-- list-package.el
+    `-- vendor
+        |-- README.md
+        |-- el-get-install.el
+        |-- .
+        |-- .
+        `-- init-loader.el
+
+- config/
+    - User configuration elisp (using init-loader.el)
+- el-get-recipes/
+    - el-get recipe elisp (using el-get)
+- init.el
+    - init file when boot emacs
+- script/
+    - deploy script
+- site-lisp
+    - List for Package Manager (package-install, el-get, ..)
+- vendor
+    - Other elisp
 
 ## Deploy
 
-yet
+    $ cd $HOME/.emacs.d/dot.emacs.d.factory
+    $ make init
+    Deploy at
+      .. /home/gongo/.emacs.d/config
+      .. /home/gongo/.emacs.d/init.el
+      .. /home/gongo/.emacs.d/vendor
+      .. /home/gongo/.emacs.d/el-get-recipes
+    $ make deploy-basic
+    Cleaning /home/gongo/.emacs.d/config
+    Deploying to /home/gongo/.emacs.d/config
+    ... 00_defmacros.el
+    ... 00_defvars.el
+    ... (skip...)
+    ... 15_color-theme.el
+
+### minimum
+
+Deploy to build a minimal environment (encoding, keybind, etc environment. no use package manager).
+
+    $ make deploy-min
+
+### basic
+
+Deploy to build a basic environment (anything, auto-complete. use package manager)
+
+    $ make deploy-basic
+
+### basic
+
+Deploy all user configuration lisp.
+
+    $ make deploy-all
+
+## Use Package Manager
+
+    $ make install-elisp
+
+Install el-get and elpa file.
 
 ## License
 
