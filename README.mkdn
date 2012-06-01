@@ -11,6 +11,13 @@
     $ cd $HOME/.emacs.d
     $ git clone git://github.com/gongo/dot.emacs.d.factory.git 
 
+## Shortest Deploy
+
+    $ cd $HOME/.emacs.d/dot.emacs.d.factory
+    $ make init deploy-all install-elisp
+
+*For more information about the following.*
+
 ## Tree
 
     .
