@@ -1,0 +1,4 @@
+(:name id-manager
+       :description "id-password management"
+       :type git
+       :url "git://github.com/kiwanami/emacs-id-manager.git")
