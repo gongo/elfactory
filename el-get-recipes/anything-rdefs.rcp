@@ -4,9 +4,8 @@
        :url "git://github.com/wakaran/anything-rdefs.git"
        :depends anything
        :after (lambda ()
-                (let ((name (concat
-                             (el-get-package-directory "anything-rdefs")
-                             "/rdefs.rb")))
+                (let ((name (concat (el-get-package-directory "anything-rdefs")
+                                    "/rdefs.rb")))
                   (unless (file-exists-p name)
                     (with-current-buffer
                         (url-retrieve-synchronously
@@ -16,8 +15,4 @@
                       (forward-char)
                       (write-region (point) (point-max) name))
                     (set-file-modes name 493)) ;; chmod 755
-
-                  (setq ar:command
-                        (concat
-                         (el-get-package-directory "anything-rdefs")
-                         "rdefs.rb")))))
+                  (setq ar:command name))))
