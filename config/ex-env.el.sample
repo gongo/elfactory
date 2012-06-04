@@ -35,3 +35,16 @@
                 ))
     (when (file-exists-p dir)
       (setenv libenv (concat dir ":" (getenv libenv))))))
+
+;;----------------------------------------
+;; proxy
+;;----------------------------------------
+(setenv "HTTP_PROXY"  "http://proxy.example.com:8080")
+(setenv "HTTPS_PROXY" (getenv "HTTP_PROXY"))
+(setenv "http_proxy"  (getenv "HTTP_PROXY"))
+(setenv "https_proxy" (getenv "HTTP_PROXY"))
+(setq http-proxy-server "proxy.example.com"
+      http-proxy-port   "8080"
+      url-proxy-services
+      '(("http"  . "proxy.example.com:8080")
+        ("https" . "proxy.example.com:8080")))
