@@ -7,4 +7,6 @@
   (el-get-install 'id-manager)
   (el-get-install 'anything)
   (el-get-install 'anything-rdefs)
+  (el-get-install 'php-mode-improved)
+  (el-get-install 'php-completion)
   )

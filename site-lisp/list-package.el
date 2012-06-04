@@ -9,7 +9,6 @@
 (package-install 'markdown-mode)
 (package-install 'melpa)
 (package-install 'org)
-(package-install 'php-mode)
 (package-install 'ruby-mode)
 (package-install 'window-layout)
 (package-install 'yaml-mode)
