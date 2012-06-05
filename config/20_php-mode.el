@@ -61,6 +61,7 @@
   (c-set-offset 'arglist-intro '+)
   (c-set-offset 'arglist-close 0)
   (setq-default tab-width 4)
+  (setq c-basic-offset 4)
   (setq indent-tabs-mode nil)
   (gtags-mode 1)
   (req php-completion
