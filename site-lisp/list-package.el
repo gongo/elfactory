@@ -14,3 +14,4 @@
 (package-install 'window-layout)
 (package-install 'yaml-mode)
 (package-install 'color-theme-sanityinc-tomorrow)
+(package-install 'multi-web-mode)
