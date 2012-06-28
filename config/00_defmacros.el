@@ -1,17 +1,4 @@
 ;;----------------------------------------
-;; リージョン内で正規置換
-;;
-;;   ref. http://cee-ux49.cee.uiuc.edu/cee490/.emacs
-;;----------------------------------------
-(defun replace-regexp-region (regexp replacement)
-  (interactive "*sReplace region: \nswith: ")
-  (save-excursion
-    (narrow-to-region (region-beginning) (region-end))
-    (goto-char (point-min))
-    (replace-regexp regexp replacement)
-    (widen)))
-
-;;----------------------------------------
 ;; いろいろマクロ
 ;;
 ;;   ref. http://www.sodan.org/~knagano/emacs/dotemacs.html
