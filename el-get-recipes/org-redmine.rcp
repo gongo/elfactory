@@ -1,0 +1,4 @@
+(:name org-redmine 
+       :description "Redmine tools using Emacs OrgMode"
+       :type git
+       :url "git://github.com/hackers/org-redmine.git")

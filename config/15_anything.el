@@ -12,6 +12,7 @@
   (interactive)
   (anything-other-buffer '(anything-c-source-buffers+
                            anything-c-source-recentf
+                           anything-c-source-gtags-select
                            )
                          "*anything default*"))
 

@@ -69,7 +69,7 @@
     (define-key php-mode-map (kbd "C-o") 'my-phpcmp-complete))
   (req auto-complete-config
        (make-variable-buffer-local 'ac-sources)
-       (setq ac-sources '(ac-source-words-in-buffer
+       (setq ac-sources '(ac-source-words-in-all-buffer
                           ac-source-filename
                           ac-source-gtags
                           ))))
