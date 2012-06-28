@@ -9,4 +9,5 @@
   (el-get-install 'anything-rdefs)
   (el-get-install 'php-mode-improved)
   (el-get-install 'php-completion)
+  (el-get-install 'cucumber.el)
   )
