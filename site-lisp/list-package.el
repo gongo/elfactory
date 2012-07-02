@@ -3,14 +3,21 @@
 ;;
 
 (package-refresh-contents)
-(package-install 'auto-complete)
-(package-install 'deferred)
-(package-install 'e2wm)
-(package-install 'markdown-mode)
-(package-install 'melpa)
-(package-install 'org)
-(package-install 'ruby-mode)
-(package-install 'window-layout)
-(package-install 'yaml-mode)
-(package-install 'color-theme-sanityinc-tomorrow)
-(package-install 'multi-web-mode)
+
+(dolist (p (list
+            ;; install elisps --
+            'auto-complete
+            'color-theme-sanityinc-tomorrow
+            'deferred
+            'e2wm
+            'markdown-mode
+            'melpa
+            'multi-web-mode
+            'org
+            'ruby-mode
+            'window-layout
+            'yaml-mode
+            ;; -----------------
+            ))
+  (package-install p))
+
