@@ -9,7 +9,7 @@
 
     $ [ -d $HOME/.emacs.d ] || mkdir $HOME/.emacs.d
     $ cd $HOME/.emacs.d
-    $ git clone git://github.com/gongo/dot.emacs.d.factory.git 
+    $ git clone git://github.com/gongo/dot.emacs.d.factory.git
 
 ## Shortest Deploy
 
@@ -43,8 +43,8 @@
     |   |-- init.sh
     |   `-- vars.sh
     |-- site-lisp
-    |   |-- list-el-get.el
-    |   `-- list-package.el
+    |   |-- elpa.el
+    |   `-- el-get.el
     `-- vendor
         |-- README.md
         |-- el-get-install.el
@@ -60,7 +60,7 @@
     - init file when boot emacs
 - script/
     - deploy script
-- site-lisp
+- packages
     - List for Package Manager (package-install, el-get, ..)
 - vendor
     - Other elisp
