@@ -1,7 +1,7 @@
 (:name anything-rdefs
        :description "anything-rdefs"
        :type git
-       :url "git://github.com/wakaran/anything-rdefs.git"
+       :url "git://github.com/mori-dev/anything-rdefs.git"
        :depends anything
        :after (lambda ()
                 (let ((name (concat (el-get-package-directory "anything-rdefs")
