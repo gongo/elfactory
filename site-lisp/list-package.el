@@ -19,5 +19,5 @@
             'yaml-mode
             ;; -----------------
             ))
-  (package-install p))
+  (unless (package-installed-p p) (package-install p)))
 
