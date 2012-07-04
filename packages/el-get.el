@@ -12,6 +12,7 @@
               'php-completion
               'php-mode-improved
               'cucumber.el
+              'open-junk-file
               ;; -----------------
               ))
     (el-get-install p)))
