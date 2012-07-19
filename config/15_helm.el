@@ -1,6 +1,20 @@
 (require 'helm-config)
 (require 'helm-gtags)
 
+(defun helm-my-default()
+  (interactive)
+  (helm-other-buffer '(helm-c-source-buffers-list
+                       helm-c-source-recentf
+                       ;;helm-c-source-gtags-select
+                       )
+                     "*helm default*"))
+
+(define-key global-map (kbd "C-x b") 'helm-my-default)
+
+;;------------------------------
+;; helm-gtags
+;;------------------------------
+
 ;; customize
 (setq helm-c-gtags-path-style 'relative)
 (setq helm-c-gtags-ignore-case t)
