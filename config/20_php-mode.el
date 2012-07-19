@@ -63,6 +63,7 @@
   (setq-default tab-width 4)
   (setq c-basic-offset 4)
   (setq indent-tabs-mode nil)
+  (setq imenu-create-index-function 'php-imenu-generic-expression)
   (helm-gtags-mode 1)
   (req php-completion
     (php-completion-mode t)
