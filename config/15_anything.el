@@ -6,8 +6,6 @@
 ;;(setq anything-enable-shortcuts 'alphabet)
 (setq anything-enable-shortcuts nil)
 
-(req anything-gtags)
-
 (defun anything-my-default()
   (interactive)
   (anything-other-buffer '(anything-c-source-buffers+

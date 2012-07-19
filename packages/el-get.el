@@ -7,7 +7,6 @@
               ;; install elisps --
               'anything
               'anything-rdefs
-              'gtags
               'id-manager
               'php-completion
               'php-mode-improved

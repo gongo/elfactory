@@ -63,7 +63,7 @@
   (setq-default tab-width 4)
   (setq c-basic-offset 4)
   (setq indent-tabs-mode nil)
-  (gtags-mode 1)
+  (helm-gtags-mode 1)
   (req php-completion
     (php-completion-mode t)
     (define-key php-mode-map (kbd "C-o") 'my-phpcmp-complete))
