@@ -10,6 +10,8 @@
             'color-theme-sanityinc-tomorrow
             'deferred
             'e2wm
+            'helm
+            'helm-gtags
             'markdown-mode
             'melpa
             'multi-web-mode
