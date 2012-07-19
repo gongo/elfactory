@@ -6,6 +6,8 @@
                   ("\\.php3\\'" . php-mode)
                   ("\\.inc\\'" . php-mode)))
 
+(speedbar-add-supported-extension '("php" "inc" "php3"))
+
 ;;----------------------------------------
 ;; http://d.hatena.ne.jp/kitokitoki/20090901/p1
 ;;   php-completion.el にマニュアルをチラ見する persistent-action を追加 - わからん
@@ -63,7 +65,7 @@
   (setq-default tab-width 4)
   (setq c-basic-offset 4)
   (setq indent-tabs-mode nil)
-  (setq imenu-create-index-function 'php-imenu-generic-expression)
+  (setq imenu-generic-expression php-imenu-generic-expression)
   (helm-gtags-mode 1)
   (req php-completion
     (php-completion-mode t)
