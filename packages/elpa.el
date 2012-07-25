@@ -19,6 +19,8 @@
             'ruby-mode
             'window-layout
             'yaml-mode
+            'sr-speedbar
+            'feature-mode
             ;; -----------------
             ))
   (unless (package-installed-p p) (package-install p)))

@@ -1,4 +1,0 @@
-(:name cucumber.el
-       :description "Major mode for editing Gherkin (i.e. Cucumber) user stories"
-       :type git
-       :url "git://github.com/michaelklishin/cucumber.el.git")

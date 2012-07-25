@@ -10,7 +10,6 @@
               'id-manager
               'php-completion
               'php-mode-improved
-              'cucumber.el
               'open-junk-file
               ;; -----------------
               ))
