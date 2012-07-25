@@ -29,21 +29,12 @@
 
 ;; List files in git repos
 (defun helm-c-sources-git-project-for (pwd)
-  (loop for elt in
-        '(("Modified files" . "--modified")
-          ("Untracked files" . "--others --exclude-standard")
-          ("All controlled files in this project" . nil))
-        for title  = (format "%s (%s)" (car elt) pwd)
-        for option = (cdr elt)
-        for cmd    = (format "git ls-files %s" (or option ""))
-        collect
-        `((name . ,title)
-          (init . (lambda ()
-                    (unless (and ,option (helm-candidate-buffer))
-                      (with-current-buffer (helm-candidate-buffer 'global)
-                        (call-process-shell-command ,cmd nil t nil)))))
-          (candidates-in-buffer)
-          (type . file))))
+  `((name . ,(format "All controlled files in this project (%s)" pwd))
+    (init . (lambda ()
+              (with-current-buffer (helm-candidate-buffer 'global)
+                (call-process-shell-command "git ls-files" nil t nil))))
+    (candidates-in-buffer)
+    (type . file)))
 
 (defun helm-git-project-topdir ()
   (file-name-as-directory
@@ -61,4 +52,4 @@
       (helm-other-buffer sources
                          (format "*helm git project in %s*" default-directory)))))
 
-(define-key global-map (kbd "C-;") 'helm-git-project)
+(global-set-key (kbd "C-;") 'helm-git-project)
