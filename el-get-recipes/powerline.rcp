@@ -1,4 +1,0 @@
-(:name powerline
-       :description "fancy statusline"
-       :type emacswiki
-       :features powerline)
