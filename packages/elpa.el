@@ -7,6 +7,7 @@
 (dolist (p (list
             ;; install elisps --
             'auto-complete
+            'ace-jump-mode
             'color-theme-sanityinc-tomorrow
             'deferred
             'e2wm
@@ -19,6 +20,9 @@
             'ruby-mode
             'window-layout
             'yaml-mode
+            'php-mode
+            'sr-speedbar
+            'feature-mode
             ;; -----------------
             ))
   (unless (package-installed-p p) (package-install p)))

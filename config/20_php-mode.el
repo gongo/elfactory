@@ -1,4 +1,4 @@
-(lazyload (php-mode) "php-mode-improved"
+(lazyload (php-mode) "php-mode"
           (setq phpcmp-global-enable-auto-update-tag-files t))
 
 (append-to-list auto-mode-alist
