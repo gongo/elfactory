@@ -3,8 +3,11 @@
 (unless (require 'el-get nil t)
   (with-current-buffer
       (find-file-noselect "~/.emacs.d/vendor/el-get-install.el")
-    (end-of-buffer)
-    (eval-print-last-sexp)))
+    (let (el-get-master-branch
+          (el-get-emacswiki-elisp-file-list-url
+           "https://raw.github.com/gongo/elfactory/master/vendor/el-get-emacswiki-retrieve-package-list.txt"))
+      (goto-char (point-max))
+      (eval-print-last-sexp))))
 
 (add-to-list 'el-get-recipe-path
              (expand-file-name "~/.emacs.d/el-get-recipes"))
