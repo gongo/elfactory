@@ -23,6 +23,8 @@
             'php-mode
             'sr-speedbar
             'feature-mode
+            'smartrep
+            'key-combo
             ;; -----------------
             ))
   (unless (package-installed-p p) (package-install p)))
