@@ -1,0 +1,4 @@
+(:name togetter-el
+       :description "Togetter viewer"
+       :type github
+       :pkgname "gongo/togetter.el")
