@@ -51,4 +51,4 @@
       (helm-other-buffer sources
                          (format "*helm git project in %s*" default-directory)))))
 
-(global-set-key (kbd "C-;") 'helm-git-project)
+;; (global-set-key (kbd "C-;") 'helm-git-project)
