@@ -2,7 +2,6 @@
 
 (unless window-system
   (defun my-cut-function (text &optional rest)
-    (interactive)
     (let ((process-connection-type nil))
       (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
         (process-send-string proc text)
