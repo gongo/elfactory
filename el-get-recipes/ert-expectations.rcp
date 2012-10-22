@@ -1,0 +1,3 @@
+(:name ert-expectations
+       :description "The simplest unit test framework in the world"
+       :type emacswiki)
