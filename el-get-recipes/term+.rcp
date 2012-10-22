@@ -4,7 +4,7 @@
        :pkgname "tarao/term-plus-el"
        :build `(("git" "submodule" "update" "--init")
                 ("make" ,(format "EMACS=%s" el-get-emacs) "compile"))
-       :post-init (let ((libdir (concat (el-get-package-directory "term-plus-el") "/lib")))
+       :post-init (let ((libdir (concat (el-get-package-directory "term+") "/lib")))
                     (add-to-list 'load-path libdir)
                     (add-to-list 'load-path (concat libdir "/anything-config/extensions"))
                     (load-library "subdirs.el")
