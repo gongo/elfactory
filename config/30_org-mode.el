@@ -1,5 +1,5 @@
 (eval-when-compile (require 'cl)) 
-(require 'org-install)
+(require 'org)
 
 (setq
  org-directory "~/Work/orgfiles"
@@ -32,7 +32,7 @@
  org-agenda-sorting-strategy (quote ((agenda time-up priority-down tag-up) (todo tag-up)))
  ;;
  ;; アジェンダは一画面一週間分表示
- org-agenda-ndays 7
+ org-agenda-span 7
  ;;
  ;; アジェンダで定期スケジュールを全部表示する(例えば .+1d だったら、毎日表示する)
  org-agenda-repeating-timestamp-show-all t
@@ -90,3 +90,48 @@
 (global-set-key (kbd "C-c g") 'gtd)
 (global-set-key (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-c l") 'org-store-link)
+
+(customize-set-variable 'org-file-apps
+                        '(("pdf" . "evince %s")))
+
+(setq org-file-apps
+      '((auto-mode . emacs)
+        ("\\.mm\\'" . default)
+        ("\\.x?html?\\'" . default)
+        ("\\.pdf\\'" . "evince %s")))
+
+(setq org-export-latex-default-packages-alist
+      '(("AUTO" "inputenc" t)
+        ("T1" "fontenc" t)
+        ("" "fixltx2e" nil)
+        ("dvipdfmx" "graphicx" t)
+        ("" "longtable" nil)
+        ("" "float" nil)
+        ("" "wrapfig" nil)
+        ("" "soul" t)
+        ("" "textcomp" t)
+        ("" "marvosym" t)
+        ("" "wasysym" t)
+        ("" "latexsym" t)
+        ("" "amssymb" t)
+        ("dvipdfmx" "hyperref" nil)
+        "\\tolerance=1000"))
+
+(eval-after-load 'org-latex
+  '(progn
+     (setq org-export-latex-classes
+           (append org-export-latex-classes
+                   '(
+                     ("jarticle"
+                      "\\documentclass{jsarticle}"
+                      ("\\section{%s}" . "\\section*{%s}")
+                      ("\\subsection{%s}" . "\\subsection*{%s}")
+                      ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                      ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                      ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
+                      )
+                     )
+                   ))
+     (setq org-latex-to-pdf-process
+           '("platex %b" "platex %b" "platex %b" "dvipdfmx %b"))
+     ))
