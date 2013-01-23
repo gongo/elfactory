@@ -1,7 +1,7 @@
 (:name term+
        :description "term-mode enhancement"
        :type github
-       :pkgname "tarao/term-plus-el"
+       :pkgname "tarao/term-plus-all"
        :build `(("git" "submodule" "update" "--init")
                 ("make" ,(format "EMACS=%s" el-get-emacs) "compile"))
        :post-init (let ((libdir (concat (el-get-package-directory "term+") "/lib")))

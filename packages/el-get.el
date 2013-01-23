@@ -7,7 +7,6 @@
               ;; install elisps --
               'id-manager
               'php-completion
-              'open-junk-file
               ;; -----------------
               ))
     (el-get-install p)))
