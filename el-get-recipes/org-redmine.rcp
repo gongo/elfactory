@@ -1,4 +1,7 @@
 (:name org-redmine 
        :description "Redmine tools using Emacs OrgMode"
        :type git
-       :url "git://github.com/gongo/org-redmine.git")
+       :url "git://github.com/gongo/org-redmine.git"
+       :prepare (progn
+                  (autoload 'org-redmine-get-issue "org-redmine" nil t)
+                  (autoload 'org-redmine-anything-show-issue-all "org-redmine" nil t)))
