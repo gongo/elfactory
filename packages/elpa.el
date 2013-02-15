@@ -6,25 +6,34 @@
 
 (dolist (p (list
             ;; install elisps --
-            'auto-complete
             'ace-jump-mode
+            'all-ext
+            'auto-complete
+            'cacoo
             'color-theme-sanityinc-tomorrow
+            'concurrent
             'deferred
+            'dired+
             'e2wm
+            'feature-mode
+            'flycheck
+            'git-gutter
             'helm
             'helm-gtags
+            'key-combo
             'markdown-mode
             'melpa
             'multi-web-mode
+            'open-junk-file
             'org
-            'ruby-mode
-            'window-layout
-            'yaml-mode
             'php-mode
-            'sr-speedbar
-            'feature-mode
+            'quickrun
+            'request
             'smartrep
-            'key-combo
+            'sr-speedbar
+            'textile-mode
+            'websocket
+            'yaml-mode
             ;; -----------------
             ))
   (unless (package-installed-p p) (package-install p)))
