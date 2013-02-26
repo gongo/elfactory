@@ -63,15 +63,6 @@
      (global-whitespace-mode 1))
 
 ;;----------------------------------------
-;; 行末の半角スペースを強調する
-;;
-;;   ref. http://openlab.dino.co.jp/2008/08/29/230500336.html
-;;----------------------------------------
-(when (boundp 'show-trailing-whitespace)
-  (setq-default show-trailing-whitespace t)
-  (set-face-background 'trailing-whitespace "PaleTurquoise"))
-
-;;----------------------------------------
 ;; 検索でマッチした箇所をハイライト表示
 ;;----------------------------------------
 (setq search-highlight t)

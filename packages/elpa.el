@@ -10,7 +10,7 @@
             'all-ext
             'auto-complete
             'cacoo
-            'color-theme-sanityinc-tomorrow
+            'color-theme-wombat+
             'concurrent
             'deferred
             'dired+

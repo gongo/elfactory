@@ -19,6 +19,12 @@
         (message (format "[load-safe] failed %s" loadlib)))
     load-status))
 
+(defmacro eval-safe (&rest body)
+  "安全な評価。評価に失敗してもそこで止まらない。"
+  `(condition-case err
+       (progn ,@body)
+     (error (message "[eval-safe] %s" err))))
+
 ;;----------------------------------------
 ;; いろいろマクロ
 ;;
