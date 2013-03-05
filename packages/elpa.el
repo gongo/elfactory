@@ -10,7 +10,6 @@
             'all-ext
             'auto-complete
             'cacoo
-            'color-theme-wombat+
             'concurrent
             'deferred
             'dired+
@@ -23,6 +22,7 @@
             'key-combo
             'markdown-mode
             'melpa
+            'monokai-theme
             'multi-web-mode
             'open-junk-file
             'org

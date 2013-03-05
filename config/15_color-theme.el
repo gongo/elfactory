@@ -1,3 +1,1 @@
-(req color-theme
-     (load-safe "color-theme-wombat+")
-     (color-theme-wombat+))
+(load-theme 'monokai t)
