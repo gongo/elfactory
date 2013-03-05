@@ -1,1 +1,1 @@
-(load-theme 'monokai t)
+(load-theme 'zenburn t)

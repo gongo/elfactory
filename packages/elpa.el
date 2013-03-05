@@ -18,11 +18,12 @@
             'flycheck
             'git-gutter
             'helm
+            'helm-ag
             'helm-gtags
             'key-combo
             'markdown-mode
             'melpa
-            'monokai-theme
+            'zenburn-theme
             'multi-web-mode
             'open-junk-file
             'org
