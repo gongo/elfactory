@@ -17,6 +17,7 @@
             'feature-mode
             'flycheck
             'git-gutter
+            'golden-ratio
             'helm
             'helm-ag
             'helm-gtags

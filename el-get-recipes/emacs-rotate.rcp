@@ -1,0 +1,9 @@
+(:name emacs-rotate
+       :description "Rotate the layout of emacs"
+       :website "http://a-newcomer.com/56"
+       :type github
+       :pkgname "daic-h/emacs-rotate"
+       :prepare (progn
+                  (autoload 'rotate-layout "rotate" nil t)
+                  (autoload 'rotate-window "rotate" nil t)))
+
