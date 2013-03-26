@@ -12,7 +12,7 @@
             'cacoo
             'concurrent
             'deferred
-            'dired+
+            'direx
             'e2wm
             'feature-mode
             'flycheck
@@ -29,6 +29,7 @@
             'open-junk-file
             'org
             'php-mode
+            'popwin
             'quickrun
             'request
             'smartrep
