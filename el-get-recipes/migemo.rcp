@@ -20,8 +20,8 @@
          (setq migemo-command cmigemo-bin)
          (setq migemo-options '("-q" "--emacs"))
          (setq migemo-dictionary cmigemo-dict)
-         (setenv "LD_LIBRARY_PATH"
-                 (concat cmigemo-lib-dir ":" (getenv "LD_LIBRARY_PATH")))
+         (dolist (env '("LD_LIBRARY_PATH" "DYLD_LIBRARY_PATH"))
+           (setenv env (concat cmigemo-lib-dir ":" (getenv env))))
          (setq migemo-user-dictionary nil)
          (setq migemo-regex-dictionary nil)
          (setq migemo-coding-system 'utf-8-unix)
