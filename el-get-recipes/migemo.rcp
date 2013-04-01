@@ -1,0 +1,29 @@
+(:name migemo
+       :description "Japanese incremental search through dynamic pattern expansion"
+       :type github
+       :pkgname "emacs-jp/migemo"
+       :build
+       (let ((tmp-dir "/tmp/cmigemo")
+             (cmigemo-dir (concat (el-get-package-directory "migemo") "/cmigemo"))
+             (type (if (or ns-p (featurep 'carbon-emacs-package)) "osx" "gcc")))
+         `(("git" "clone" "git://github.com/koron/cmigemo.git" ,tmp-dir)
+           (,(format
+              (concat
+               "cd %s && sh ./configure --prefix=%s && make %s %s-dict %s-install")
+              tmp-dir cmigemo-dir type type type))))
+
+       :post-init
+       (let* ((cmigemo-dir (concat (el-get-package-directory "migemo") "cmigemo"))
+              (cmigemo-bin (concat cmigemo-dir "/bin/cmigemo"))
+              (cmigemo-lib-dir (concat cmigemo-dir "/lib"))
+              (cmigemo-dict (concat cmigemo-dir "/share/migemo/utf-8/migemo-dict")))
+         (setq migemo-command cmigemo-bin)
+         (setq migemo-options '("-q" "--emacs"))
+         (setq migemo-dictionary cmigemo-dict)
+         (setenv "LD_LIBRARY_PATH"
+                 (concat cmigemo-lib-dir ":" (getenv "LD_LIBRARY_PATH")))
+         (setq migemo-user-dictionary nil)
+         (setq migemo-regex-dictionary nil)
+         (setq migemo-coding-system 'utf-8-unix)
+         (load-library "migemo")
+         (migemo-init)))
