@@ -14,6 +14,7 @@
             'deferred
             'direx
             'e2wm
+            'expand-region
             'feature-mode
             'flycheck
             'git-gutter
@@ -26,6 +27,7 @@
             'melpa
             'zenburn-theme
             'multi-web-mode
+            'multiple-cursors
             'open-junk-file
             'org
             'php-mode

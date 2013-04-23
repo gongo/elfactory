@@ -12,3 +12,13 @@
 (smartrep-define-key
     global-map "C-x w" '(("l" . 'rotate-layout)
                          ("w" . 'rotate-window)))
+
+;; For multiple-cursors
+(req multiple-cursors
+     (global-unset-key "\C-t")
+     (smartrep-define-key
+         global-map "C-t" '(("C-p" . 'mc/mark-previous-like-this)
+                            ("C-n" . 'mc/mark-next-like-this)
+                            ("C-a" . 'mc/edit-beginnings-of-lines)
+                            ("C-e" . 'mc/edit-ends-of-lines)
+                            ("C-i" . 'mc/insert-numbers))))
