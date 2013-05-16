@@ -6,7 +6,8 @@
   (dolist (p (list
               ;; install elisps --
               'id-manager
-              'php-completion
+              'color-theme-tomorrow
+              'emacs-rotate
               ;; -----------------
               ))
     (el-get-install p)))

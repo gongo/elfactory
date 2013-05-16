@@ -25,7 +25,6 @@
             'key-combo
             'markdown-mode
             'melpa
-            'zenburn-theme
             'multi-web-mode
             'multiple-cursors
             'open-junk-file

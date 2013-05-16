@@ -1,1 +1,1 @@
-(load-theme 'zenburn t)
+(color-theme-tomorrow-night-bright)
