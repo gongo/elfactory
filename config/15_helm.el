@@ -17,8 +17,8 @@
 ;;------------------------------
 
 ;; customize
-(setq helm-c-gtags-path-style 'relative)
-(setq helm-c-gtags-ignore-case t)
+(setq helm-gtags-path-style 'relative)
+(setq helm-gtags-ignore-case t)
 
 ;; key bindings
 (defun-add-hook 'helm-gtags-mode-hook
@@ -33,6 +33,7 @@
               (with-current-buffer (helm-candidate-buffer 'global)
                 (call-process-shell-command "git ls-files" nil t nil))))
     (candidates-in-buffer)
+    (candidate-transformer helm-w32-pathname-transformer)
     (type . file)))
 
 (defun helm-git-project-topdir ()
