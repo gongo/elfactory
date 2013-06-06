@@ -55,11 +55,14 @@
            '((space-mark ?\x3000 [?\u25a1])
              (tab-mark  ?\t  [?\xBB ?\t] [?\\ ?\t])))
      (setq whitespace-space-regexp "\\(\x3000+\\)")
+     (setq-default show-trailing-whitespace t)
+
      (set-face-foreground  'whitespace-tab "#700000")
      (set-face-background  'whitespace-tab 'nil)
-     (set-face-underline-p 'whitespace-tab t)
+     (set-face-underline   'whitespace-tab t)
      (set-face-foreground  'whitespace-space "#700000")
      (set-face-background  'whitespace-space 'nil)
+     (set-face-background  'trailing-whitespace "purple4")
      (global-whitespace-mode 1))
 
 ;;----------------------------------------
