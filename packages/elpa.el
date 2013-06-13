@@ -33,6 +33,8 @@
             'popwin
             'quickrun
             'request
+            'ruby-block
+            'ruby-electric
             'smartrep
             'sr-speedbar
             'textile-mode
