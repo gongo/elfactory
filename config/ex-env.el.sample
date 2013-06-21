@@ -12,9 +12,6 @@
 (dolist (dir (list
               (expand-file-name "~/bin")
               (expand-file-name "~/.homebrew/bin")
-              (expand-file-name "~/.rvm/bin")
-              (expand-file-name "~/.rbenv/bin")
-              (expand-file-name "~/.rbenv/shims")
               (expand-file-name "~/.pythonbrew/bin")
               (expand-file-name "~/bin/mew/bin")
               (expand-file-name "~/bin/howm")

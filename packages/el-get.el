@@ -8,6 +8,7 @@
               'id-manager
               'color-theme-tomorrow
               'emacs-rotate
+              'rcodetools
               ;; -----------------
               ))
     (el-get-install p)))
