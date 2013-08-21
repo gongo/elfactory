@@ -7,6 +7,7 @@
               ;; install elisps --
               'id-manager
               'color-theme-tomorrow
+              'open-junk-file
               'emacs-rotate
               'rcodetools
               ;; -----------------
