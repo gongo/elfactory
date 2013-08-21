@@ -1,3 +1,4 @@
+._haskell-refac.el DeletedPage
 .durdn.office.el ;;;
 .emacs-AndyStewart.el ;;;
 .emacs-ChristianRovner.el ;;; Emacs init file for Christian Rovner            -*- coding: utf-8 -*-
@@ -5,13 +6,11 @@
 .emacs-IzaakBeekman.el ;;;
 .emacs-ViniciusJoseLatorre.el ;;; .emacs --- Minimal Emacs initialization file
 .emacs-planner-thierry.el ;;; .emacs-planner.el -- configuration planner, muse, remember pour laptop thierry
+1000-words.el ;;; 1000-words.el -- limit yourself to the most common words while writing
 1040tt.el ;;; 1040tt.el --- U.S. tax calculator for form 1040 filers
 123-menu.el ;;; 123-menu.el --- Simple menuing system, reminiscent of Lotus 123 in DOS
 AndyStewart_YasnippetTemplateCode.tar.gz
-Comments_on_any-ini-mode.el in xemacs this mode dies with the error 
-Comments_on_arrange-buffers.el Here is my (EmilioLopes') version of it, using a functional predicate for more flexible buffer selection:
-Comments_on_elisp-depend.el IMO it's not a good idea to upload the file instead of pasting its text. Why? Because clicking Diff is useless in that case.  I click Diff to see what you changed (even just to see if the change is spam), and all I see is the file name as the diff content.
-Comments_on_erc-nick-notify.el Sorry, I deleted this earlier because I noticed that the version on Marmalade has a vulnerability, but I didn't check to see whether the one here was fixed.
+Execute.el = Introduction =
 Icicles.tar.gz
 LazyCatDepend.el ;;; 搜集的扩展加载
 LazyCatFont.el ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 字体设置 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -20,6 +19,7 @@ LazyCatRedefine.el ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 重定义函数 ;;;;;;;;;;;;;;
 LazyCatSetup.el ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 扩展设置 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 LazyCatStartup.el ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 启动设置 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 LazyCatTheme.el ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Emacs 主题设置 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+PowerShell-Mode.el ;;; powershell-mode.el --- Mode for editing Powershell scripts
 Powershell.el ;;; powershell.el --- run powershell as an inferior shell in emacs
 STING-software-engineering-glossary.el ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 SuperDuperRedundantPlus+.el ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -50,13 +50,14 @@ alarm.el ;;; alarm.el --- Alarm
 alert.el ;;; alert.el --- Alternatives to `message'
 align-by-current-symbol.el ;;; align-by-current-symbol.el --- Align lines containing a symbol according to that symbol.
 align.el ;;; align.el --- aling text seperated by whitespaces in columns
+all-ext.el ;;; all-ext.el --- Extension of M-x all
 alpha-window.el ;;; alpha-window.el set and control window's alpha value
 alt-font-menu.el ;;; alt-font-menu.el --- alternative (auto generated) font menu for x
 amarok.el ;;; amarok.el --- Simple interface to Amarok music player
 amazon.el ;;; amazon.el -- Emacs client for Amazon E-Commerce Service (i.e. use Emacs to search books on Amazon.com)
 amigo.el ;;; amigo.el --- interface with friendfeed.com
-ampc.el [[DeletedPage]]
 analog.el ;;; analog.el --- monitor lists of files or command output
+anaphora.el ;;; anaphora.el --- anaphoric macros providing implicit temp variables
 anchored-transpose.el ;;; anchored-transpose.el --- Transposes a phrase around an anchor phrase
 ange-ftp.el.gz ;;; ange-ftp.el --- transparent FTP support for GNU Emacs
 annotate.el ;;; annotate.el --- simple file annotation system
@@ -105,15 +106,16 @@ anything-startup.el ;;; anything-startup.el --- anything.el startup file
 anything-traverse.el ;;; anything-traverse.el --- Use traverselisp within anything.
 anything-yaetags.el ;;; anything-yaetags.el --- Yet another etags interface with anything.
 anything.el ;;; anything.el --- open anything / QuickSilver-like candidate-selection framework
-aok.el ;;; aok.el -- various useful ways to do `multi-occur'
+aok.el ;;; aok.el --- various useful ways to do `multi-occur'
 apache-mode.el ;;; apache-mode.el --- major mode for editing Apache configuration files
 application.el ;;; application.el --- start application for files matching entries from application-caller-list
 apply-mode-line-format.el ;;; apply-mode-line-format.el --- Return `mode-line-format' as a string
 appt.el ;;; appt.el --- Notification of appointments from your diary file.
 apropos+.el ;;; apropos+.el --- Extensions to `apropos.el'
 apropos-fn+var.el ;;; apropos-fn+var.el --- Apropos for functions and variables
+apt-utils-ido.el ;;; apt-utils-ido.el --- Ido commands for apt-utils
 apt-utils.el ;;; apt-utils.el --- Emacs interface to APT (Debian package management)
-archive-region.el ;;;; archive-region.el --- Move region to archive file instead of killing
+archive-region.el ;;; archive-region.el --- Move region to archive file instead of killing
 armenian.el
 arrange-buffers.el ;;; arrange-buffers.el -- display all buffers which name and mode match a regexp 
 artist-xmas.el ;;; artist-xmas.el --- xemacs port of artist.el
@@ -121,7 +123,7 @@ arxiv-reader.el ;;; arxiv-reader.el --- an interface for reading and sorting arX
 ascii-table.el ;;; ascii-table.el --- simple ASCII table
 ascii.el ;;; ascii.el --- ASCII code display.
 asciidoc.el ;;; asciidoc.el --- asciidoc text file development support
-ascope.el ;;; Another cscope interface for emacs
+ascope.el ;;; ascope.el --- Another cscope interface for emacs
 atim-unscroll.el ;;; atim-unscroll.el --- Minor mode for restoring buffer look as it was before scrolling.
 atom-blogger.el ;;; atom-blogger.el --- Utilities for Atom Blogger API
 audel.el ;;; audel.el --- An audtool frontend for Emacs
@@ -132,6 +134,7 @@ auto-complete-etags.el ;;; auto-complete-etags.el --- Auto-completion source for
 auto-complete-extension.el ;;; auto-complete-extension.el --- Some extension for auto-complete-mode
 auto-complete-verilog.el ;;; auto-complete-verilog.el --- Auto-completion source for verilog
 auto-complete.el ;;; auto-complete.el --- Inline auto completion
+auto-completing-read.el ;;; auto-completing-read.el
 auto-document.el ;;; auto-document.el --- Automatic document generator of Emacs Lisp
 auto-indent-mode.el ;;; auto-indent-mode.el --- Auto indent Minor mode
 auto-indent.el ;;; auto-indent.el -- automatically indent source code
@@ -149,8 +152,9 @@ autofit-frame.el ;;; autofit-frame.el --- Automatically resize one-window frames
 autoinfo.el ;;; autoinfo.el --- show automatic information for the current selection
 autoload+.el ;;; autoload+.el --- Extensions to `autoload.el'.
 autosmiley.el ;;; autosmiley.el --- Convert smileys into their graphical representation
-autotest.el ;;; autotest.el --- ZenTest's autotest integration with emacs.
+autotest.el ;;; autotest.el - ZenTest's autotest integration with emacs.
 avenue-mode.el ;;; avenue-mode.el --- major mode for editing ESRI avenue scrips
+awk-it.el ;;; awk-it.el --- Run AWK interactively on region!
 axcess.el ;;; axcess.el --- Axcess and Netlinx editing support
 ayr-china-util.el ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 babel.el ;;; babel.el --- interface to web translation services such as Babelfish
@@ -162,6 +166,7 @@ basic-edit-toolkit.el ;;; basic-edit-toolkit.el --- Basic edit toolkit.
 basic.el ;;; basic.el --- major mode for editing basic and visual basic code
 batch-mode.el ;;; batch-mode.el --- major mode for editing ESRI batch scrips
 bazaar.el ;;; sent to janmar@iprimus.com.au but it bounced:
+bbdb-ext.el ;;; bbdb-ext.el --- Extra commands for BBDB
 bbdb-mew.el ;;; bbdb-mew.el --- BBDB interface to Mew
 bbdb-sms.el ;;; bbdb-sms.el --- bbdb functions for sending SMS text messages with sms-mode
 bbdb-vcard-export.el ;;; bbdb-vcard-export.el -- export BBDB as vCard files
@@ -212,6 +217,7 @@ btjunkie-search.el ;;; btjunkie-search.el --- brutal query engine against btjunk
 buff-menu+.el ;;; buff-menu+.el --- Extensions to `buff-menu.el'.    -*- coding:utf-8 -*-
 buffer-extension.el ;;; buffer-extension.el --- Some enhanced functions for buffer manipulate.
 buffer-move.el ;;; buffer-move.el --- Swap buffers without typing C-x b on each window
+buffer-name-pastebin.el ;;; pastebin.el --- A simple interface to the www.pastebin.com webservice
 buffer-ring.el ;;; buffer-ring.el --- A torus for buffer navigation. A ring of buffers, and a ring of buffer rings.
 buffer-stack-suppl.el ;;; buffer-stack-suppl.el --- Bubble though buffers of the same major-mode
 buffer-stack.el ;;; buffer-stack.el --- Enhanced intelligent switch-to-other-buffer replacement.
@@ -263,11 +269,13 @@ cm-path.el ;;;------------------------------------------------------------------
 cm-string.el ;;;----------------------------------------------------------------------
 cmd-mode.el ;;; cmd-mode.el --- Edit of MS Windows cmd and bat files ;; -*- coding: sjis-dos -*-
 cobol-mode.el ;;; cobol-mode.el --- Handles only what little Cobol I happen to know
+code-definition-window.el ;;; code-definition-window.el
 col-highlight.el ;;; col-highlight.el --- Highlight the current column.
 color-browser.el ;;; color-browser.el --- A utility for designing Emacs color themes.
 color-moccur.el ;;; color-moccur.el ---  multi-buffer occur (grep) mode
 color-occur.el ;;; color-occur.el
 color-theme-ahei.el ;;; color-theme-ahei.el --- Color Theme by ahei
+color-theme-black-purple.el ;;; color-theme-black-purple.el
 color-theme-domq.el ;;; color-theme-domq.el - DominiqueQuatravaux's very own color theme!
 color-theme-emacs-revert-theme.el ;;; Color Theme revert emacs theme for key-choices.el
 color-theme-empty-void.el ;;; color-theme-empty-void.el
@@ -278,6 +286,7 @@ color-theme-tango.el ;;; Color theme based on Tango Palette. Created by danranx@
 color-theme-ubuntu2.el
 color-theme-vim-insert-mode.el ;;; VIM insert mode
 color-theme-x.el ;;; color-theme-x.el --- convert color themes to X11 resource settings
+colour-region.el ;;; colour-region.el --- Toggle regions of the buffer with different text snippets
 column-marker.el ;;; column-marker.el --- Highlight certain character columns
 columnize.el ;;; columnize.el --- Formats a list of items into columns (pillars)
 comint-kill-output-to-kill-ring.el ;;; comint-kill-output-to-kill-ring.el ---  Kill last comint output and put it in the kill ring
@@ -296,6 +305,7 @@ constraint.el ;;; constraint.el --- a constraint propagation library in elisp
 contentswitch.el ;;; contentswitch.el --- switch to buffer/file by content
 context.el ;;; context.el
 control-lock.el ;;; control-lock.el --- Like caps-lock, but for your control key.  Give your pinky a rest!
+conx.el ;;; conx.el --- Yet another dissociater
 cook-mode.el ;;; cook-mode.el --- Major mode for writing cook (a make replacement) files
 coptic.el
 copy-from-surrounding-lines.el ;;; copy-from-surrounding-lines.el
@@ -319,6 +329,7 @@ csv-mode.el ;;; csv-mode.el --- major mode for editing comma-separated value fil
 csv-nav.el ;;; csv-nav.el --- navigate and edit CSV files
 ctypes.el ;;; ctypes.el --- Enhanced Font lock support for custom defined types.
 cursor-chg.el ;;; cursor-chg.el --- Change cursor dynamically, depending on the context.
+cursor-in-brackets.el ;;; cursor-in-brackets.el --- move cursor in brackets/quotes when right bracket/quote is inserted
 cus-edit+.el ;;; cus-edit+.el --- Enhancements to `cus-edit.el'.
 cycle-buffer.el ;;; cycle-buffer.el --- select buffer by cycling through
 cygwin-mount.el ;;; cygwin-mount.el --- Teach EMACS about cygwin styles and mount points.
@@ -332,11 +343,16 @@ d-insert-import.el ;;; d-insert-import.el --- insert import statement for D lang
 dabbrev-expand-multiple.el ;;; dabbrev-expand-multiple.el --- dabbrev-expand for multiple
 date-calc.el ;;; date-calc.el --- date calculation and parsing routines
 dbk.el ;;; dbk.el --- convert docbook to muse
+ddg-mode.el ;;; ddg-mode.el --- 
+ddg-search.el ;;; ddg-search.el --- 
+ddg.el ;;; ddg.el --- 
 ddl-mode.el ;;; ddl-mode.el --- Handles the Tandem-Compaq-HP DDL language.
+dedicate-windows-manually.el ;;; dedicate-windows-manually.el --- Manually (un)dedicate windows
 def-face-const.el ;;; def-face-const.el --- Macro for defining faces & their variables.
 defaultcontent.el ;;; defaultcontent.el --- a templating tool. Fill new files with default content.
 deferred.el ;;; deferred.el --- Simple asynchronous functions for emacs lisp
 defshell.el ;;; defshell.el --- Define inferior shells -*-unibyte: t; coding: iso-8859-1;-*-
+delight.el ;;; delight.el - A dimmer switch for your lighter text.
 delim-col.el ;;; delim-col.el --- prettify all columns in a region or rectangle
 delsel.el ;;; delsel.el --- Delete the region (selection) upon char insertion or DEL.
 descbinds-anything.el ;;; descbinds-anything.el --- Yet Another `describe-bindings' with `anything'.
@@ -358,14 +374,15 @@ dim-google.el ;;; dim-google.el
 dired+.el ;;; dired+.el --- Extensions to Dired.
 dired-column-widths.el ;;; dired-column-widths.el --- Corrects column widths after entry modification.
 dired-details+.el ;;; dired-details+.el --- Enhancements to library `dired-details+.el'.
-dired-details.el ;;; dired-details.el -- make file details hide-able in dired
+dired-details.el ;;; dired-details.el --- make file details hide-able in dired
+dired-dups.el ;;; dired-dups.el --- Find duplicate files and display them in a dired buffer
 dired-efap.el ;;; dired-efap.el --- Edit Filename At Point in a dired buffer
 dired-extension.el ;;; dired-extension.el --- Some extension for dired
 dired-filetype-face.el ;;; dired-filetype-face.el  --- set different faces for different filetype in dired buffer.
 dired-isearch.el ;;; dired-isearch.el --- isearch in Dired
 dired-lis.el ;;; dired-lis.el --- Letter isearch in dired-mode
 dired-open.el ;;; dired-open.el --- Open varoius files in dired.
-dired-single.el ;;; dired-single.el -- reuse the current dired buffer to visit another directory
+dired-single.el ;;; dired-single.el --- Reuse the current dired buffer to visit another directory
 dired-sort-map.el
 dired-sort-menu+.el ;;; dired-sort-menu+.el --- Extensions to `dired-sort-menu.el'
 dired-sort-menu.el ;;; dired-sort-menu.el --- provide menu/dialogue for dired sort options
@@ -389,14 +406,16 @@ doremi-frm.el ;;; doremi-frm.el --- Incrementally adjust face attributes and fra
 doremi-mac.el ;;; doremi-mac.el --- A macro for defining Do Re Mi commands.
 doremi.el ;;; doremi.el --- Do Re Mi: Incremental change using arrow keys or mouse wheel.
 dos-indent.el ;;; dos-indent.el --- Adds indentation to Dos-mode
-dos.el ;;; dos.el --- major mode for editing Dos scripts (batch files)
+dos.el ;;; dos.el --- Major mode for editing Dos scripts
 dot-emacs-helper.el ;;; dot-emacs-helper.el --- Some helper functions for .emacs
 dot-mode.el ;;; dot-mode.el --- Minor mode to repeat typing or commands
+dotemacs-xfq.el ;;; xfq's .emacs
 double-char.el ;;; double-char.el --- Get different insertion when you hit a char twice fast enought
 double-type.el ;;; double-type.el --- keyboard operation method corresponding to double click on a mouse.
 dove-ext.el ;;; dove-ext.el --- Emacs minor extensions written by David young
 download-icicles.el ;;; download-icicles.el -- Download the Icicles Package
 doxymacs-yard.el ;;;
+dpaste.el ;;; dpaste.el --- Emacs integration for dpaste.com
 drill-instructor.el ;;; drill-instructor.el ---  Enforce key-bind of Emacs.
 drivein.el ;;; drivein.el
 dropdown-list.el ;;; dropdown-list.el --- Drop-down menu interface
@@ -435,7 +454,6 @@ el-autoyas.el ;;; el-autoyas.el --- Automatically create Emacs-Lisp Yasnippets
 el-expectations-failure-sample.el ;;; el-expectations-failure-sample.el --- failure example of Emacs Lisp Expectations.
 el-expectations-success-sample.el ;;; el-expectations-success-sample.el --- success example of Emacs Lisp Expectations.
 el-expectations.el ;;; el-expectations.el --- minimalist unit testing framework
-el-get.el ;;; Now at http://github.com/dimitri/el-get
 el-markup.el ;;; el-markup.el --- Emacs Lisp to Markup
 el-mock.el ;;; el-mock.el --- Tiny Mock and Stub framework in Emacs Lisp
 el-swank-fuzzy.el ;;; el-swank-fuzzy.el --- fuzzy symbol completion.
@@ -451,6 +469,7 @@ emacs-init-check.el ;;;; emacs-init-check.el --- Automatic init file checker
 emacs-init.el ;;; emacs-init.el --- Drew Adams's Emacs init file.
 emacs-lock+.el ;;; emacs-lock+.el --- extensions to standard library `emacs-lock.el'
 emacs-wiki-finddead.el ;;; emacs-wiki-finddead.el --- Find dead files in your EmacsWiki
+emacsbug+.el ;;; emacsbug+.el --- Extensions to `emacsbug.el'.
 emacsserver.el ;;; emacsserver.el --- A server in emacs-lisp
 email.el ;;; email.el --- Extensions to mail-mode
 embeddedchangelog.el ;;; embeddedchangelog.el --- edit a change log embedded in a file
@@ -458,6 +477,7 @@ emboss.el ;;; emboss.el --- Commands to browse and write emboss code
 emdroid.el ;;; emdroid.el --- Android Wrappers for Emacs
 emms-extension.el ;;; emms-extension.el --- Some extensions for emms
 emms-get-lyrics.el ;;; emms-get-lyrics.el --- Get the lyrics of the song emms is currently playing
+emms-mark-ext.el ;;; emms-mark-ext.el --- Extra functions for emms-mark-mode and emms-tag-edit-mode
 emms-player-streaming-fix.el ;;; emms-player-streaming-fix.el --- mplayer url fix
 emms-seek-minor-mode.el ;;; emacs-seek-minor-mode.el --- like emacs-volume-minor-mode except +/- seek
 emoticons.el ;;; emoticons.el --- Replace text with emoticons
@@ -470,7 +490,7 @@ env-print.el ;;; env-print.el -- print an envelope
 eoops.el ;;; eoops.el --- An Object Oriented Programming System in Elisp
 eperiodic.el ;;; eperiodic.el --- periodic table for Emacs
 epubmode.el ;;; epub-mode.el --- Minor mode for reading epub e-books in Emacs
-erc-babel.el ;;; erc-babel.el --- communicate in different languages with ERC, using automatic translation
+erc-babel.el ;;; erc-babel.el --- Communicate with ERC in different languages using online translation services
 erc-extension.el ;;; erc-extension.el --- Some extension for erc
 erc-highlight-nicknames-xemacs.el ;;;
 erc-highlight-nicknames.el ;;; erc-highlight-nicknames.el --- Highlights nicknames
@@ -481,10 +501,12 @@ erc-tex.el ;;; erc-tex.el --- LaTeX mathematical expressions rendering for ERC
 erc-track-xmas.el ;;; erc-track-xmas.el
 erec.el ;;; erec.el --- Minor mode to record and play back audio
 erefactor.el ;;; erefactor.el --- Emacs-Lisp tools
-ergo-movement-mode.el ;;; ergo-movement-mode.el --- Eronomic keybindings for cursor movement
-erlang-dired-mode.el ;;; erlang-dired.el --- erlang dired mode    -*- coding:utf-8 -*-
+ergo-movement-mode.el ;;; ergo-movement-mode.el --- Ergonomic keybindings for cursor movement
+erlang-dired-mode.el ;;; erlang-dired-mode.el --- erlang dired mode    -*- coding:utf-8 -*-
 erobot.el ;;; erobot.el --- game with elisp functions trying to survive
+ert-expectations.el ;;; ert-expectations.el --- The simplest unit test framework in the world
 esh-myparser.el ;;;; esh-myparser.el --- Define original Eshell cmdline parser by bypassing original parser
+eshell-autojump.el ;;; eshell-autojump.el -- autojump command for Eshell
 ess-edit.el ;;; ess-edit.el --- convenient editing of R code
 ess-smart-underscore.el ;;; ess-smart-underscore.el --- Ess Smart Underscore
 essh.el ;;; essh.el --- a set of commands that emulate for bash what ESS is to R.
@@ -502,9 +524,13 @@ eukleides.el ;;; eukleides.el --- Major mode to edit eukleides files.
 eval-sexp-fu.el ;;; eval-sexp-fu.el --- Tiny functionality enhancements for evaluating sexps.
 eval-to-texi.el ;;; eval-to-texi.el
 everything.el ;;; everything.el --- Bridge to MS Windows desktop-search engine Everything
+eviews.el ;;; eviews.el --- Major-mode for editing eviews program files
+evil-elscreen.el ;;; evil-elscreen.el --- evil wrpaaer to use elscreen as tab
 ewb.el ;;; ewb.el --- Emacs Web Browser
 exec-abbrev-cmd.el ;;; exec-abbrev-cmd.el --- Execute commands by giving an abbreviation
+execute.el ;;; execute.el --- 
 expand-a-word.el ;;; expand-a-word.el --- expand-a-word
+extend-dnd.el ;;; extend-dnd.el --- R drag and Drop
 external-abook.el ;;; external-abook.el --- Enable the use of external address books from within Emacs
 extract-ical.el ;;; extract-ical --- Import iCalendar events from buffers to OS X iCal
 extraedit.el ;;; extraedit.el --- Extra useful edit functions and macros
@@ -546,7 +572,7 @@ find-func+.el ;;; find-func+.el --- Extensions to `find-func.el'.
 find-func-extension.el ;;; find-func-extension.el --- Some extension functions for `find-func.el'.
 find-library.el ;;; find-library.el --- Find emacs-lisp library with completion
 finder+.el ;;; finder+.el --- Extensions to standard library finder.el
-findr.el ;;; findr.el -- Breadth-first file-finding facility for (X)Emacs
+findr.el ;;; findr.el --- Breadth-first file-finding facility for (X)Emacs
 finkinfo.el ;;; fink-info.el --- major mode for Fink package info files
 fit-frame.el ;;; fit-frame.el --- Resize a frame.  In particular, fit a frame to its buffers.
 fix-buffers-list.el ;;; fix-buffers-list.el --- New M status and colors in buffers list
@@ -559,7 +585,7 @@ flip-tables.el ;;; flip-tables.el --- put a flipping table emoji on your kill ri
 fliptext.el ;;; fliptext.el --- Input method for flipping characters upside down
 flobl.el ;;; flobl.el -- frame-local buffer list
 flydoc.el ;;; flydoc.el --- on-the-fly documentation -*- coding: utf-8 -*-
-flymake-cursor.el ;;; flymake-cursor.el --- displays flymake error msg in minibuffer after delay
+flymake-cursor.el [http://subconscious-therapy.com/hipnoterapi-surabaya Hipnoterapi surabaya]
 flymake-extension.el ;;; flymake-extension.el --- Some extension for flymake
 flymake-for-csharp.el ;;; flymake-for-csharp.el --- C# mode derived mode
 flymake-helper.el ;;; flymake-helper.el -- flymake helper methods
@@ -575,7 +601,8 @@ follow-mouse.el ;;; follow-mouse.el --- Automatically select the window under th
 font-lock+.el ;;; font-lock+.el --- Enhancements to standard library `font-lock.el'.
 font-lock-color-test.el ;;; font-lock-color-test.el --- Tool to test new font lock colors.
 font-lock-escape-char.el ;;; font-lock-escape-char.el --- 
-font-menus-da.el ;;; font-menus-da.el --- Additional font menus.
+font-lock-menus.el ;;; font-lock-menus.el --- Font-lock menus: enhanced `font-menus.el'
+font-utils.el ;;; font-utils.el --- Utility functions for working with fonts
 foo.el ;;; foo.el --- example file
 foreach.el ;;; foreach.el --- simple list iteration macros.
 fortune-mode.el ;;; fortune-mode.el --- Interface to write fortunes quickly
@@ -583,7 +610,7 @@ frame+.el ;;; frame+.el --- Extensions to `frame.el'.
 frame-bufs.el ;;; frame-bufs.el --- a minor mode for frame-relative buffer lists
 frame-cmds.el ;;; frame-cmds.el --- Frame and window commands (interactive functions).
 frame-fns.el ;;; frame-fns.el --- Non-interactive frame and window functions.
-frame-restore.el ;;; frame-restore.el --- save/restore frame size&position at shutdown/startup
+frame-restore.el ;;; frame-restore.el --- Save/restore frame size & position with desktop-save
 framemove.el ;;; framemove.el --- directional frame selection routines
 free-tagging.el ;;; free-tagging.el --- A global Status bar for emacs
 french-holidays.el <pre>
@@ -597,7 +624,7 @@ gds.el ;;; gds.el --- Emacs interface to Google Desktop Search
 georgian.el
 get-rfc.el ;;; get-rfc.el --- Getting and viewing RFCs
 ghc-modules.el ;;; 
-git-dwim.el ;;;; git-dwim.el --- Context-aware git commands such as branch handling
+git-dwim.el ;;; git-dwim.el --- Context-aware git commands such as branch handling
 glade-mode.el ;;; glade-mode.el --- A mode to view glade interface using tree-widget
 glagolitic.el
 glimpse.el ;;; GLIMPSE.EL --- Interface to glimpse 
@@ -607,7 +634,7 @@ gm-bots.el ;;; gm-bots.el --- Here you can define new bots used by gm-webbot.el.
 gm-webbot.el ;;; gm-webbot.el --- An implementation of Webbots known from MS Frontpage.
 gmail-message-send-mail.el ;;; gmail-message-send-mail.el - advice for that function to use gmail smtp when appropriate
 gnugo.el ;;; gnugo.el
-gnus-alias.el ;;; @(#) gnus-alias.el -- an alternative to gnus-posting-styles
+gnus-alias.el ;;; gnus-alias.el --- an alternative to gnus-posting-styles
 gnus-autocheck.el ;;; gnus-autocheck.el
 gnus-extension.el ;;; gnus-extension.el --- Simple description
 gnus-hardsort.el ;;; gnus-hardsort.el -- permanently sort group by date
@@ -629,7 +656,7 @@ googleaccount.el ;;; googleaccount.el --- Google Accounts login from Emacs
 gosh.el ;;; gosh.el --- an interface to Gauche
 gothic.el
 goto-chg.el ;;; goto-chg.el --- goto last change
-goto-last-change.el ;;; goto-last-change.el --- Move point through buffer-undo-list positions -*-unibyte: t; coding: iso-8859-1;-*-
+goto-last-change.el ;;; goto-last-change.el --- Move point through buffer-undo-list positions
 goto-random-line.el ;;; Jump to a random line
 grab-and-drag.el ;;; grab-and-drag.el --- Scroll a window by mouse dragging
 gradebook.el ;;; gradebook.el -- major mode for keeping a simple plain-text gradebook
@@ -653,9 +680,12 @@ hanconvert.el ;;; -*- coding: utf-8 -*-
 handbook.el ;;; handbook.el --- Quick access to the FreeBSD handbook
 hangul.el ;;; hangul.el --- Korean Hangul input method
 hannum.el ;;; hannum.el --- convert han number  -*- coding: utf-8 -*-
+hardhat.el ;;; hardhat.el --- Protect against clobbering user-writable files
 haskell-extension.el ;;; haskell-extension.el --- Some extension for haskell mode.
 haskell-tweet-errors.el
 header2.el ;;; header2.el --- Support for creation and update of file headers.
+helm-anything.el ;;; helm-anything.el --- Bridge between anything and helm
+helm-delicious.el ;;; helm-delicious.el --- helm extensions for delicious bookmarks
 help+.el ;;; help+.el --- Extensions to `help.el'.
 help+20.el ;;; help+20.el --- Extensions to `help.el' for Emacs 20.
 help-dwim-perlapi.el ;;; help-dwim-perlapi.el --- Show help of perlapi
@@ -676,19 +706,24 @@ hidesearch.el ;;; hidesearch.el --- Incremental search while hiding non-matching
 hideshow-fringe.el ;;;
 hideshowvis.el ;;; hideshowvis.el --- Add markers to the fringe for regions foldable by hideshow.el
 highlight-beyond-fill-column.el ;;; highlight-beyond-fill-column.el --- font-lock-add-keywords aid for Emacs
+highlight-chars.el ;;; highlight-chars.el --- Highlight specified sets of characters, including whitespace.
 highlight-cl.el ;;; highlight-cl.el --- Highlighting `cl' functions.
 highlight-current-line.el ;;; highlight-current-line.el --- highlight line where the cursor is.
+highlight-fns.el ;;; highlight-fns.el --- Highlight called Lisp functions.
 highlight-sexp.el ;;; highlight-sexp.el
 highlight-tail.el ;;; highlight-tail.el --- draw a colourful "tail" while you write
 highlight.el ;;; highlight.el --- Highlighting commands.
 highline.el ;;; highline.el --- minor mode to highlight current line in buffer
 himark.el ;;; himark.el --- marking text by highlighting
 himarks-mode.el ;;; himarks-mode.el --- Highlight marks in buffer.
+hippie-exp-ext.el ;;; hippie-exp-ext.el --- Extension of hippie-expand
 hippie-namespace.el ;;; hippie-namespace.el --- Special treatment for namespace prefixes in hippie-expand
 historyf.el ;;; historyf.el --- file history library like browser
+hl-defined.el ;;; hl-defined.el --- Highlight defined or undefined symbols in Emacs-Lisp.
 hl-line+.el ;;; hl-line+.el --- Extensions to hl-line.el.
 hl-spotlight.el ;;; hl-spotlight.el --- Extension of hl-line.el to spotlight current few lines.
 hqw-goto.el ;;; hqw-goto.el -- A quick way to go to specific window line and position.
+hrb-mode.el ;;; -*- coding: utf-8 -*-
 hsv2rgb.el ;;; hsv2rgb.el --- Transformation from HSV to RGB
 html-accent.el ;;; html-accent.el --- Function that replace accented char by its html representation
 html-lite.el ;;; html-lite.el --- Construct html with sexp
@@ -712,7 +747,7 @@ icicles-mac.el ;;; icicles-mac.el --- Macros for Icicles
 icicles-mcmd.el ;;; icicles-mcmd.el --- Minibuffer commands for Icicles
 icicles-menu-xmas.el ;;; icicles-menu-xmas.el --- xemacs port (beta) of icicles-menu.el
 icicles-mode.el ;;; icicles-mode.el --- Icicle Mode definition for Icicles
-icicles-opt.el ;;; icicles-opt.el --- User options (variables) for Icicles
+icicles-opt.el ;;; icicles-opt.el --- User options (customizable variables) for Icicles
 icicles-var.el ;;; icicles-var.el --- Internal variables for Icicles
 icicles-xmas.el ;;; icicles-xmas.el --- xemacs port (beta) of icicles.el
 icicles.el ;;; icicles.el --- Minibuffer input completion and cycling.
@@ -721,6 +756,7 @@ ide-skel.el ;;; ide-skel.el --- IDE skeleton for Emacs Lisp hackers
 identica-mode.el ;;; identica-mode.el --- Major mode for Identica
 idle-scroll.el ;;; idle-scroll.el --- scroll down a line when Emacs is idle
 idlehelp.el ;;; idlehelp.el --- Display help when being idle.
+ido-gnus.el ;;; ido-gnus.el --- Access gnus groups or servers using ido
 ido-load-library.el ;;; ido-load-library.el --- Load-library alternative using ido-completing-read
 ido-preview.el ;;; ido-preview.el --- commands for viewing current option contests before opening
 idomenu.el ;;; idomenu.el --- imenu tag selection a la ido
@@ -782,6 +818,7 @@ init-yasnippet.el ;;; init-yasnippet.el --- Yasnippet configuration
 insert-time-string.el ;;; insert-time-string.el --- Insert the current time. -*- coding: utf-8; -*-
 install-elisp.el ;;; install-elisp.el --- Simple Emacs Lisp installer
 intel-hex-mode.el ;;; intel-hex-mode.el --- Mode for Intel Hex files.
+interaction-log.el ;;; interaction-log.el --- exhaustive log of interactions with Emacs
 interesting-buffers.el ;;; interesting-buffers.el --- Add keybinding to cleanup displayed buffers
 interpreter-minor.el ;;; interpreter-minor.el --- provide navigation, clickability, folding, interpretation
 ipa.el ;;; ipa.el --- In-place annotations
@@ -796,13 +833,15 @@ isearch-extension.el ;;; isearch-extension.el --- Extension for isearch.
 iswitchb-highlight.el ;;; iswitchb-highlight.el --- Highlighting extension for iswitchb
 iterator.el ;;; iterator.el --- A library to create and use elisp iterators objects.
 itunes.el ;;; itunes.el -- utility functions to interact with iTunes
-iy-go-to-char.el ;;; iy-go-to-char.el -- Go to next CHAR which is similar to "f" in vim
+iy-go-to-char.el ;;; iy-go-to-char.el --- Go to next CHAR which is similar to "f" in vim
 jabber-chatx.el ;;; jabber-chatx.el --- Add the ability to remember and extract old messages
+jabber-encrypt.el ;;; jabber-encrypt.el --- 
 jabber-libnotify.el ;;; jabber-libnotify.el - emacs-jabber interface to libnotify
 java-class-doc.el ;;; java-class-doc.el -- Open the documentation for a Java class
 java-complete.el ;;; java-complete.el --- Java completion
 java-mode-indent-annotations.el ;;; java-mode-indent-annotations.el --- Indentation for Java 5 annotations.
 javacc-mode.el ;;; javacc-mode.el --- A major mode for editing javacc and jjtree files.
+jb-misc-macros.el ;;; jb-misc-macros.el --- Miscellaneous macros
 jcl-command-subset.el ;;; jcl-command-subset.el --- Like M-x but with only a subset of commands.
 jde-eclipse-compiler-server.el ;;; jde-eclipse-compiler-server.el --- Eclipse compiler as a compile server for JDEE.
 jde-findbugs.el ;;; jde-findbugs.el --- Findbugs interface for JDE
@@ -836,9 +875,10 @@ key-choices.el ;;; key-choices.el --- Key Choices -- Also Viper has different co
 key-chord.el ;;; key-chord.el --- map pairs of simultaneously pressed keys to commands
 keyboard-macro-timer.el ;;; keyboard-macro-timer.el --- Run last keyboard macro with a timer
 keychain-environment.el ;;; keychain-environment.el --- Loads keychain environment variables into emacs
-kill-ring-ido.el ;;; kill-ring-ido.el --- command for keyring browsing with ido
+kill-ring-ido.el ;;; kill-ring-ido.el --- command for kill-ring browsing with ido
 kis-interface.el ;;; kis-interface.el --- Extensions for kis-mode.
 kis-project.el ;;; kis-project.el --- Extensions for kis-mode.
+kmacro-decision.el ;;; kmacro-decision.el --- Add conditional branching to keyboard macros
 kokopelli.el ;;; kokopelli.el --- List function declaration and jump to it  -*-mode: Emacs-Lisp; tab-width: 4;-*- .
 lacarte.el ;;; lacarte.el --- Execute menu items as commands, with completion.
 langtool.el ;;; langtool --- Grammer check utility using LanguageTool
@@ -856,6 +896,7 @@ legalese.el ;;; legalese.el --- Add legalese to your program files
 less.el ;;; less.el --- less style view mode
 levenshtein.el ;;; levenshtein.el --- Edit distance between two strings.
 lib-requires.el ;;; lib-requires.el --- Commands to list Emacs Lisp library dependencies.
+light.el ;;; light.el --- lightning completion
 line-comment-banner.el ;;; line-comment-banner.el --- Comment a line in a banner style.
 line-num.el ;;; line-num.el --- Display line numbers in left-margin of buffer.
 linkd.el ;;; linkd.el --- Make hypertext with active links in any buffer
@@ -871,6 +912,7 @@ lisppaste.el ;;; lisppaste.el --- Interact with the lisppaste pastebot via XML-R
 lispxmp.el ;;; lispxmp.el --- Automagic emacs lisp code annotation
 list-processes+.el ;;; list-processes+.el --- Add process management to `list-processes'
 list-register.el ;;; list-register.el --- List register
+list-utils.el ;;; list-utils.el --- List-manipulation utility functions
 lively.el ;;; lively.el --- Interactively updating text
 lnk.el ;;; lnk.el --- Follow Microsoft Explorer shortcuts
 log-buffer.el ;;; log-buffer.el --- Log buffer utils
@@ -878,6 +920,7 @@ lojban-mode.el ;;; lojban-mode.el --- lojban text mode w/ syntactical highlighti
 lojban.el ;;; lojban.el --- regexps, functions, commands to handle lojban text
 longlines-jp.el ;;; longlines-jp.el --- automatically wrap long lines in Japanese text  -*- coding:utf-8 -*-
 longlines.el ;;; longlines.el --- automatically wrap long lines
+look-dired.el ;;; look-dired.el --- Extensions to look-mode for dired buffers
 look-mode.el ;;; look-mode.el --- quick file viewer for image and text file browsing
 loops.el ;;; loops.el --- detect loops in lists
 lorem-ipsum.el ;;; lorem-ipsum.el --- Insert dummy pseudo Latin text.
@@ -900,6 +943,7 @@ mailrc.el ;;; mailrc.el --- edit mailrc aliases
 mailx.el ;;; mailx.el --- A front-end to mailx
 man-page-fix.el ;;; man-page-fix.el
 mark-lines.el ;;; mark-lines.el --- triple-click like line marking functions
+mark.el ;;; mark.el --- Navigate and visualize the mark-ring
 markerpen.el ;;; markerpen.el --- Colour and highlight arbitrary sections of buffers
 master.el ;;; master.el --- make a buffer the master over another buffer
 mazemax.el ;;; mazemax.el --- labyrinth generation and exploration
@@ -930,7 +974,7 @@ mingus.el ;;; mingus.el --- Time-stamp: <2009-07-06 20:22:26 sharik>
 minibuf-electric-gnuemacs.el ;;; minibuf-electric-gnuemacs.el
 minibuffer-complete-cycle.el ;;; minibuffer-complete-cycle.el --- Cycle through the *Completions* buffer
 minimal-session-saver.el ;;; minimal-session-saver.el --- Very lean session saver
-minor-mode-hack.el ;;;; minor-mode-hack.el --- Hack of minor-modes
+minor-mode-hack.el ;;; minor-mode-hack.el --- Change priority of minor-mode keymaps
 mirror-mode.el ;;; mirror-mode.el --- insert parens and string quotes in pairs
 mirror.el ;;; mirror.el --- Maintain a (remote) copy of a (local) file
 misc-cmds.el ;;; misc-cmds.el --- Miscellaneous commands (interactive functions).
@@ -1044,6 +1088,7 @@ multi-scratch.el ;;; multi-scratch.el --- Multiple scratches manager
 multi-shell.el ;;; multi-shell.el --- Multi-Shell Manager
 multi-term.el ;;; multi-term.el --- Managing multiple terminal buffers in Emacs.
 multiple-line-edit.el ;;; multiple-line-edit.el --- Edit multiple line at a time.
+multipoint.el ;;; multipoint.el --- A minor mode for multiple simultaneous regions
 multitran.el ;;;
 multiverse.el ;;; multiverse.el --- manage multiple versions of buffers in an Emacs session
 mumamo-noweb.el ;;; mumamo-noweb.el --- MuMaMo noweb goo
@@ -1059,6 +1104,7 @@ mysql-table2entity-4java.el ;;; mysql-table2entity-4java.el --- mysql table2enti
 mysql.el ;;; mysql.el --- mysql front-end
 mythryl-mode.el ;;; mythryl-mode.el --- Major mode for editing Mythryl code
 mz-comment-fix.el ;;; mz-comment-fix.el --- fixes nested comments for XML and other languages
+nREPL.el *nrepl.el* is an Emacs client for nREPL, the Clojure networked REPL server. It's a great alternative to the now deprecated combination of [[SLIME]] + swank-clojure.
 naf-mode-art-keywords.el ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 naf-mode-awards-prizes.el ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 naf-mode-benezit-flags.el ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -1091,10 +1137,10 @@ naf-mode-xrefs.el ;;; naf-mode-xrefs.el --- xrefing variable list of corelated n
 naf-mode.el ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 naked.el ;;; naked.el --- Provide for naked key descriptions: no angle brackets.
 nav-flash.el ;;; nav-flash.el --- Briefly highlight the current line
-navflash.el
 nc.el ;;; nc.el --- emulate famos ms-dog file browser
 netrexx-mode.el ;;; netrexx-mode.el --- highlight and indent Netrexx program files.
 newpaste.el ;;; newpaste.el --- Paste directly from Emacs to http://paste.lisp.org using Emacs `url' library
+newpastebin.el
 newsticker-extension.el ;;; newsticker-extension.el --- Some extension function for newsticker
 newsticker-notify.el ;;; newsticker-notify.el --- Notify newsticker news in mode-line
 nmcobol-mode.el ;;; nmcobol-mode.el --- For use with Tandem Cobol only - Sorry.
@@ -1109,6 +1155,8 @@ oddmuse-curl.el ;;; oddmuse-curl.el -- edit pages on an Oddmuse wiki using curl
 oddmuse.el ;;; oddmuse.el -- edit pages on an Oddmuse wiki
 oggel.el ;;; oggel.el --- OGG encoding for EmacsLisp 
 oicq.el ;;; oicq.el --- A front-end to perl OICQ
+old-fashioned-undo.el ;;; old-fashioned-undo.el --- Undo/Redo in very simple, and old fashioned way.
+one-key-bmkp.el ;;; one-key-bmkp.el --- one-key menus for bookmarks
 one-key-config.el ;;; one-key-config.el --- Configuration for one-key.el
 one-key-default.el ;;; one-key-default.el --- one-key-ize default key bindings
 one-key-dir.el ;;; one-key-dir.el --- Functions for quickly navigating directory trees with one-key menus
@@ -1118,7 +1166,8 @@ one-key.el ;;; one-key.el --- Easy access configurable popup menus to display ke
 oneonone.el ;;; oneonone.el --- Frame configuration that uses one frame per window.
 onkey.el ;;; A complicated macro to simplify global key (un)binding.
 online-search.el ;;; online-search.el --- Online dictionary or intelligent api search engine for developers
-open-junk-file.el ;;;; open-junk-file.el --- Open a junk (memo) file to try-and-error
+open-junk-file.el ;;; open-junk-file.el --- Open a junk (memo) file to try-and-error
+opengrok.el ;;; opengrok.el --- Navigate source code with OpenGrok
 openpaste.el ;;; openpaste.el -- Emacs interface for OpenPastebin
 oprofile-mode.el ;;; oprofile-mode.el --- An oprofile callgraph viewer
 options+.el ;;; options+.el --- Extensions to `options.el'.
@@ -1130,11 +1179,13 @@ org-annotate-file.el ;;; org-annotate-file.el --- Annotate a file with org synta
 org-assoc-tags.el ;;; org-assoc-tags.el --- Automatically associate tags when key-tagging an item
 org-blog.el ;;; org-blog.el --- create and publish a blog with org-mode
 org-cua-dwim.el ;;; org-cua-dwim.el --- Org-mode and Cua mode compatibility layer
+org-dotemacs.el ;;; org-dotemacs.el --- Store your emacs config as an org file, and choose which bits to load.
 org-export-blocks-format-plantuml.el ;;; org-export-blocks-format-plantuml.el Export UML using plantuml
 org-extension.el ;;; org-extension.el --- Some extensions for Org mode
 org-jira.el ;;; org-jira.el --- add a jira:ticket protocol to org.
 org-json.el ;;; org-json.el --- conversion between org and json
 org-mairix.el ;;; org-mairix.el - Support for hooking mairix search into Org for different MUAs
+org-notify.el ;;; org-notify.el --- 
 org-occur-goto.el ;;; org-occur-goto.el -- search open org buffers with an occur interface
 org-oddmuse.el ;;; org-oddmuse.el --- Transform from Org-mode to Oddmuse Wiki format.
 org-outlook.el ;;; org-outlook.el --- Outlook org
@@ -1149,15 +1200,16 @@ organizer-mode.el ;;; organizer-mode.el --- major mode for editing organizer lis
 orgfold-separate-file.el ;;; orgfold.el
 orgfold.el ;;; orgfold.el
 orgindent.el ;;; orgindent.el --- 
+osx-browse.el ;;; osx-browse.el --- Web browsing helpers for OS X
 otp.el ;;; otp.el --- a one-time password creator for Emacs -*- emacs-lisp -*-
 outline+.el ;;; outline+.el --- Extensions to `outline.el'.
-outline-magic.el ;;; outline-magic.el --- outline mode extensions for Emacs
 outline-wiki.el ;;; outline-wiki.el --- An outline-based wiki-like mode
 outlook-org.el ;;; outlook-org.el --- Outlook org
 override-keymaps.el ;;; override-keymaps.el
 pabbrev.el ;;; pabbrev.el --- Predictive abbreviation expansion
 paint.el ;;; paint.el --- Makes a Emacs to the Paint Tool
 palette.el ;;; palette.el --- Color palette useful with RGB, HSV, and color names
+pangu-spacing.el ;;; pangu-spacing.el --- Minor-mode to add space between Chinese and English characters.
 paredit-extension.el ;;; paredit-extension.el --- Simple extension base on paredit.el
 parenthesis.el ;;; parenthesis.el --- Insert pair of parenthesis
 parser-fn.el ;;;
@@ -1252,6 +1304,7 @@ ps-print-22.tar.gz
 ps-print-23.tar.gz
 ps2pdf.el ;;; ps2pdf.el --- Convert Postscript to PDF
 pstricks.el A proposition for a enhanced pstricks.el for using pstricks (http://tug.org/PSTricks/main.cgi/). I don't use it anymore intensively but feel free to work on it - jpgeorget
+psvn.el ;;; psvn.el --- Subversion interface for emacs
 pushy.el ;;; pushy.el --- pushy completion
 puzzle.el ;;; puzzle.el --- slide puzzle for Emacs
 py-indent.el ;;; py-indent.el --- Python indentation with annotations
@@ -1277,6 +1330,7 @@ rcirc-dbus.el ;;; rcirc-dbus.el --- rcirc dbus notifications
 rcirc-ding.el ;;; rcirc-ding.el -- do something such as beep on channel activity
 rcirc-extension.el ;;; rcirc-extension.el --- The extensions that i collect.
 rcirc-groups.el ;;; rcirc-groups.el -- an emacs buffer in rcirc-groups major mode
+rcirc-help.el ;;; rcirc-help.el -- print doc strings of rcirc commands
 rcirc-late-fix.el ;;; rcirc-late-fix.el --- Replace s/wrong/right strings on rcirc buffers
 rcirc-nonames-on-join.el ;;;; Notice: 
 rcirc-notify+.el ;;; rcirc-notify+.el --- Rcirc notify library
@@ -1293,7 +1347,7 @@ re-builder-from-xemacs-patched.el ;;; re-builder-from-xemacs-patched.el --- buil
 read-float.el ;;; Copyright (C) 2012  Tobias.Naehring -- Read float values in binary format from literal buffer
 really-simple-wiki.el ;;; really-simple-wiki.el --- edit local raw wiki pages
 recentf-buffer.el ;;; recentf-buffer.el --- creates the buffer with the list of recently open files.
-recentf-ext.el ;;;; recentf-ext.el --- Recentf extensions
+recentf-ext.el ;;; recentf-ext.el --- Recentf extensions
 reco.el ;;; reco.el --- 'Reco'gnize what is playing on a streaming audio
 record-processor.el ;;; record-processor.el
 record-type.el ;;; record-type.el -- Define record type for Emacs Lisp
@@ -1311,6 +1365,7 @@ repdet.el ;;; repdet.el --- detect repetition in user activity
 repeat-insert.el ;;; repeat-insert.el --- Repetitititive insertion functions.
 replace+.el ;;; replace+.el --- Extensions to `replace.el'.
 replace-eval-xmas.el ;;; replace-eval-xmas.el -- Xemacs port of gnu emacs query-replace-* functions.
+replace-from-region.el ;;; replace-from-region.el --- Replace commands whose query is from region
 repository-root.el ;;; repository-root.el --- deduce the repository root directory for a given file
 require-or-install.el ;;; require-or-install.el --- Download and automagically install Emacs Lisp
 rewrite.el ;;; rewrite.el ---  Utility to rewrite text files with easier regular expression handling
@@ -1340,9 +1395,9 @@ rv-font-23.el ;;; rv-font-23.el --- set font(cjk) for emacs-23
 rxvt.el ;;; rxvt.el --- define function key sequences for rxvt
 save-abbreviation-mode.el This is an (extremely) minor mode for magically creating and saving aliases for emacs lisp functions, which are then reloaded when emacs restarts.
 save-and-dwim.el ;;; save-and-dwim.el --- save, then do something after saving.
-save-load-path.el ;;;; save-load-path.el --- save load-path and reuse it to test
+save-load-path.el ;;; save-load-path.el --- save load-path and reuse it to test
 savehist-20+.el ;;; savehist-20+.el --- Save minibuffer history.
-savekill.el ;;;; savekill.el --- Save kill ring to disk
+savekill.el ;;; savekill.el --- Save kill ring to disk
 saw-client.el ;;; saw-client.el --- Interaction with sawfish
 scheme-complete.el ;;; scheme-complete.el --- Smart tab completion for Emacs
 scheme-here.el ;;; scheme-here.el --- cmuscheme extension for multiple inferior processes
@@ -1392,17 +1447,20 @@ shell-history.el ;;; shell-history.el --- integration with shell history
 shell-pop.el ;;; shell-pop.el --- Helps you pop up and pop out shell buffer easily.
 shortlist.el <pre>
 show-help.el ;;; show-help.el --- Show help as showtip
+show-marks.el ;;; show-marks.el --- Navigate and visualize the mark-ring
 show-point-mode.el ;;; show-point-mode.el --- show point position in status bar
-show-wspace.el ;;; show-wspace.el --- Highlight specified sets of characters, including whitespace.
+show-wspace.el ;;; show-wspace.el --- OBSOLETE - replaced by library `highlight-chars.el'.
 showtip.el ;;; showtip.el --- Show tip at cursor
 sie.el ;;; sie.el --- Interpreter of a Scheme-like language
 sierotki.el ;;; sierotki.el --- Introduce tildes after single-letter words
 sig-quote.el ;;; sig-quote.el --  Add quotes to signature according to recipients (Gnus/RMAIL/MH-E/vm)
 simple+.el ;;; simple+.el --- Extensions to standard library `simple.el'.
-simple-call-tree.el ;;; simple-call-tree.el -- analyze source code based on font-lock text-properties
+simple-call-tree+.el ;;; simple-call-tree+.el --- Extensions to simple-call-tree
+simple-call-tree.el ;;; simple-call-tree.el --- analyze source code based on font-lock text-properties
 simple-emacswiki.el ;;; simple-emacswiki.el --- edit emacswiki.org within Emacs
 simple-wiki-completion.el ;;; simple-wiki-completion.el ---
 simple-wiki-recent-changes.el ;;; simple-wiki-recent-changes.el --- view recent changes 
+simpleclip.el ;;; simpleclip.el --- Simplified access to the system clipboard
 singlebind.el ;;; singlebind.el --- Bind commands to single characters
 ska-skel-matlab.el ;;; ska-skel-matlab.el --- my matlab skeletons
 sl.el ;;; sl.el --- sl for emacs lisp
@@ -1418,7 +1476,7 @@ smart-dnd.el ;;; smart-dnd.el --- user-configurable drag-n-drop feature
 smart-operator.el ;;; smart-operator.el --- Beautify the operators in codes
 smartrep.el ;;; smartrep.el --- Support sequential operation which omitted prefix keys.
 sml-modeline.el ;;; sml-modeline.el --- Show position in a scrollbar like way in mode-line
-smooth-scroll.el ;;; smooth-scroll.el --- Minor mode for smooth scrolling.
+smooth-scroll.el ;;; smooth-scroll.el --- Minor mode for smooth scrolling and in-place scrolling.
 sms.el ;;; sms.el --- major mode for composing and sending SMS text messages
 snipplr.el ;;; snipplr.el --- Emacs interface to snipplr.com
 sort+.el ;;; sort+.el --- Extensions to `sort.el'.
@@ -1427,9 +1485,11 @@ space-chord.el ;;; space-chord.el --- key chord with Space
 spam-stat.el ;;; spam-stat.el --- detecting spam based on statistics
 spanish.el ;;; spanish.el is free software
 spartan-wiki.el ;;; spartan-wiki.el --- a really spartan personal wiki
-speck.el ;;; speck.el --- minor mode for spell checking
+speck.el ;;; speck.el --- minor mode for spell checking    -*- coding: utf-8; -*-
 speedbar-extension.el ;;; speedbar-extension.el --- Some extensions for speedbar
+speedkey.el ;;; speedkey.el -- simple keybindings with documentation
 spell-number.el ;;; spell-number.el --- Spell out an integer or currency in words.  -*- coding: utf-8 -*-
+spss.el ;;; spss.el --- Major-mode for editing SPSS program files
 sql-complete.el ;;; sql-complete.el --- provide completion for tables and columns
 sql-completion.el ;;; sql-completion.el --- Completion in *SQL* for mysql
 sql-indent.el ;;; sql-indent.el --- indentation of SQL statements
@@ -1437,13 +1497,14 @@ sql-transform.el ;;; sql-transform.el --- transform SQL statements
 sql-with-placeholders.el ;;; sql-with-placeholders.el --- handle SQL statements with placeholders gently
 sql.el ;;; sql.el --- specialized comint.el for SQL interpreters
 sqled-mode.el ;;; sqled-mode.el --- Major Mode for editing sql, sqlplus and pl/sql code
+sqlite.el ;;; sqlite.el --- 
 sqlparser-mysql-complete.el ;;; sqlparser-mysql-complete.el --- completing tablename,column name for mysql. -*- coding:utf-8 -*-
 sqlparser-oracle-complete.el ;;; sqlparser-oracle-complete.el --- completing tablename,column name for oracle. -*- coding:utf-8 -*-
 sqlparser-sqlserver-complete.el ;;; sqlparser-sqlserver-complete.el --- complete tablename and columnname when editing sql -*- coding:utf-8 -*-
 sqlplus.el ;;; sqlplus.el --- User friendly interface to SQL*Plus and support for PL/SQL compilation
 sqlserver-query.el ;;; sqlserver-query.el --- execute sql select using sqlcmd.exe or osql.exe on SQL SERVER. -*- coding:utf-8 -*-
 sqlserver-table2entity-4csharp.el ;;; sqlserver-table2entity-4csharp.el --- sqlserver table2entity for csharp   -*- coding:utf-8 -*-
-sqlserver-table2entity-4java.el ;;; sqlserver-table2entity-4csharp.el --- sqlserver table2entity for csharp   -*- coding:utf-8 -*-
+sqlserver-table2entity-4java.el ;;; sqlserver-table2entity-4java.el --- sqlserver table2entity for java   -*- coding:utf-8 -*-
 sr-monotone.el ;;;
 sr-speedbar.el ;;; sr-speedbar.el --- Same frame speedbar
 srfi.el ;;; srfi.el --- View Scheme requests for implementation
@@ -1466,7 +1527,7 @@ stuffcast.el ;;; stuffcast --- Stuff a PMP with content
 subedit.el ;;; subedit.el --- edit part of a buffer in a new buffer
 submerge.el ;;;----------------------------------------------------------------------
 subr-21.el ;;; subr-21.el --- Provides Emacs 20 with Emacs 21 subr.el and built-in functions.
-sudo-ext.el ;;;; sudo-ext.el --- sudo support
+sudo-ext.el ;;; sudo-ext.el --- sudo support
 sudo-save.el ;;; sudo-save.el --- Allow saving files using sudo
 summarye.el ;;; summarye.el --- list up matched strings from a buffer, and display them in summary buffer
 sunrise-commander.el ;;; sunrise-commander.el --- two-pane file manager for Emacs based on Dired and inspired by MC  -*- lexical-binding: t -*-
@@ -1490,11 +1551,13 @@ switch-to-new-buffer.el ;;; switch-to-new-buffer.el --- Switch to a new buffer w
 switch-window.el ;;; Now at http://github.com/dimitri/switch-window
 symlink-fix.el ;;; symlink-fix.el --- Remove symbolic links from file pathnames.
 synonyms.el ;;; synonyms.el --- Look up synonyms for a word or phrase in a thesaurus.
+syntactic-sugar.el ;;; syntactic-sugar.el --- Effect-free forms such as if/then/else
 sys.el ;;; sys.el --- Determine which kind of system Emacs is running.
+syslog-mode.el ;;; syslog-mode.el --- Major-mode for viewing log files
 tab-in-tabular.el ;;; tab-in-tabular.el --- Treat ampersands like table field separators
 tabbar-extension.el ;;; tabbar-extension.el --- Some extension for tabbar.
-tabbar-ruler.el ;;; tabbar-ruler.el --- Setup tabbar to look pretty...
-tabbar.el ;;; Tabbar.el --- Display a tab bar in the header line
+tabbar-ruler.el ;;; tabbar-ruler.el --- Pretty tabbar, autohide, use both tabbar/ruler
+tabbar.el ;; -*-no-byte-compile: t; -*-
 tacl-mode.el ;;; tacl-mode.el --- Handles the Tandem/NSK/Guardian TACL language.
 tacl-syntax.el ;;; tacl-syntax.el
 tag.el ;;; tag.el -- tagging files
@@ -1508,6 +1571,7 @@ tal-mode.el ;;; tal-mode.el --- Handles the Tandem/NSK/Guardian TAL & PTAL langu
 task-timer.el ;;; task-timer.el --- Simple task timer package.
 tc.el ;;; tc.el -- cite text with proper filling
 tcp-client.el ;;; tcp-client.el -- Providing a network interface
+tcp-server.el ;;; tcp-server.el --- an emacs tcp server
 teco.el ;;; teco.el --- Dale Worley's teco-in-elisp interpreter
 tellicopy.el ;;; tellicopy.el --- A minor mode for saving the thing at point to `kill-ring'
 telnet-contrib.el ;;; telnet-contrib.el --- Telnet commands for Emacs on MS Windows.
@@ -1518,6 +1582,7 @@ tempo-x.el ;;; tempo-x.el --- More elements for tempo
 term-toggle.el ;;; term-toggle.el --- Toggle to and from the *terminal* buffer
 test.el ;;; test.el
 testr.el ;;; testr-minor-mode - Quick and easy Ruby TDD
+tex-smart-umlauts.el ;;; tex-smart-umlauts.el --- Smart umlaut conversion for TeX.
 texlabel.el ;;; texlabel.el --- Auto insertion of equation labels in TeX
 texmate-import.el This has been renamed [[textmate-to-yas.el]]
 text-translator-load.el ;;; text-translator-load.el --- Text Translator
@@ -1540,7 +1605,7 @@ thumbs.el ;;; thumbs.el --- Thumbnails previewer for images files
 tidy.el ;;; tidy.el --- Interface to the HTML Tidy program
 tie-mode.el ;;; tie-mode.el --- Tie code editing commands for GNU Emacs
 tiling.el ;;; tiling.el --- changing window layout
-time-ext.el ;;;; time-ext.el --- more function for time/date
+time-ext.el ;;; time-ext.el --- more function for time/date
 timeclock-x.el ;;; timeclock-x.el --- Extra features for John Wiegley's timeclock package
 timer+.el ;;; timer+.el --- Extensions to `timer.el'.
 timid.el ;;; timid.el --- timid completion
@@ -1562,7 +1627,7 @@ topsongs.el ;;; @(#) topsongs.el -- a song database for the lazy emacser
 tortoise-svn.el ;;; tortoise-svn.el
 tpum.el ;;; tpum.el --- Popup menus in text mode.
 track-scroll.el ;;; track-scroll.el --- Enable direct scrolling with the mouse
-tracker-dired.el ;;; tracker-dired.el --- run a tracker-search query and dired the output
+tracker-dired.el
 tracking.el ;;; tracking.el --- Buffer modification tracking
 trans-ej.el ;;; trans-ej.el --- English-Japanese translator using web translation service -*- Coding: utf-8 -*-
 trans-regions.el ;;; trans-regions.el --- Transpose regions command.
@@ -1573,6 +1638,7 @@ trash-settings.el ;;; trash-settings.el - Intelligent integration with system tr
 trashcan.el ;;; trashcan.el --- A recoverable file deletion system
 traverselisp.el ;;; traverselisp.el --- walk through directories and perform actions on files.
 tree-mode.el ;;; tree-mode.el --- A mode to manage tree widgets
+truthy.el ;;; truthy.el --- Test the content of a value
 ts-mode.el ;;; ts-mode.el --- An Emacs major mode for editing TypoScript files
 tsql-indent.el ;;; tsql-indent.el -- indents TSQL (and other SQL) statements
 tsv-mode.el ;;; tsv-mode.el --- Major mode for edit table files
@@ -1585,6 +1651,7 @@ typing.el ;;; typing.el --- The Typing Of Emacs
 typopunct.el ;;; typopunct.el --- Automatic typographical punctuation marks
 tzhelp.el ;;; tzhelp - very simple time zone tools
 ucs-cmds.el ;;; ucs-cmds.el --- Macro to create commands that insert Unicode chars.
+ucs-utils-6.0-delta.el ;;; ucs-utils-6.0-delta.el --- Unicode 5.2 to 6.0 delta
 ucs-utils.el ;;; ucs-utils.el --- Utilities for Unicode characters
 ukrainian-holidays.el <pre>
 ul.el ;;; ul.el --- insert/remove underlining in Emacs
@@ -1612,6 +1679,7 @@ vc-bzr.el ;;; vc-bzr.el --- VC backend for the bzr revision control system
 vc-darcs.el vc-darcs.el is an emacs script that has been written by Jorgen Schaefer and Juliusz Chroboczek.
 vc-hooks+.el ;;; vc-hooks+.el --- Extensions to `vc-hooks.el'.
 vc-jump.el ;;; vc-jump.el --- jump to status buffer for the current VC
+vector-utils.el ;;; vector-utils.el --- Vector-manipulation utility functions
 vel.el ;;; vel.el --- keyboard/mouse-based "self-scroller"
 vera-1.19.tar.gz
 versions.el ;;; versions.el --- version string comparison
@@ -1631,7 +1699,7 @@ vlf.el ;;; vlf.el --- View Large Files
 vline.el ;;; vline.el --- show vertical line (column highlighting) mode.
 vm-thread.el ;;; vm-thread.el --- Functions for collapsing threads in a VM Summary buffer
 vnesting.el ;;; vnesting.el --- Show form nesting with vertical bars
-volatile-highlights.el ;;; volatile-highlights.el -- Minor mode for visual feedback on some operations.
+volatile-highlights.el ;;; volatile-highlights.el --- Minor mode for visual feedback on some operations.
 volctrl.el ;;; volctrl.el --- Elisp interface to controling audio output 
 vsh-mode.el ;;; vsh-mode.el is free software
 w32-browser.el ;;; w32-browser.el --- Run Windows application associated with a file.
@@ -1661,7 +1729,7 @@ wcy-display-line-number.el ;;; wcy-display-line-number.el --- line number mode f
 wcy-recentf.el ;;; wcy-recentf.el --- open recent saved file and recent opened file
 wcy-swbuff.el ;;; wcy-swbuff.el --- switch buffer quickly
 wdired-extension.el ;;; wdired-extension.el --- Some extension functions for `wdired.el'.
-wdired.el Note that wdired.el is part of GNU emacs since version 23 per [http://comments.gmane.org/gmane.linux.debian.devel.emacsen/2590 this post].
+wdired.el ;;; wdired.el --- Rename files editing their names in dired buffers
 webgen-mode.el ;;; webgen-mode.el --- webgen mode
 weblogger.el Please get a current version from https://launchpad.net/weblogger-el
 weekly-view.el ;;; weekly-view.el --- bar graph view of the week's diary events
@@ -1752,6 +1820,7 @@ x-face-mini.el ;;; x-face-mini.el --- Create MINI X-Face image for XEmacs/Emacs2
 x-migrant.el ;;; x-migrant.el --- Support for subprocesses handling remote X displays
 xclip.el ;;; xclip.el --- Emacs Interface to XClip
 xcode.el ;;;
+xcowsay.el ;;; xcowsay.el ---
 xcscope+.el ;;; xscope+.el -- Providing an extension to xcscope.
 xgtags-extension.el ;;; xgtags-extension.el --- Some extension for xgtags.el
 xgtags.el ;;; xgtags.el --- gtags facility for Emacs
@@ -1778,5 +1847,5 @@ yatm.el ;;; yatm.el -- Yet Another Text Menu
 yiddish.el
 zenburn.el
 zenirc-chanbuf.el ;;; zenirc-chanbuf.el --- zenirc one channel per buffer support
-zjl-hl.el ;;;  This package can highlight variable and function call and others in c/emacs, make life easy
+zjl-hl.el ;;;This package can highlight variables and function calling and other keywords in c
 zoom-frm.el ;;; zoom-frm.el --- Commands to zoom frame font size.
