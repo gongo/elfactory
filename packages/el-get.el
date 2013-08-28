@@ -5,6 +5,7 @@
 (let ((el-get-default-process-sync t))
   (dolist (p (list
               ;; install elisps --
+              'anything
               'id-manager
               'color-theme-tomorrow
               'open-junk-file
