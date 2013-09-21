@@ -1,4 +1,5 @@
 (require 'go-mode-load)
+(require 'go-autocomplete)
 
 (defun-add-hook 'go-mode-hook
   (setq c-basic-offset 4)
