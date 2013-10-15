@@ -12,7 +12,8 @@
 (dolist (hook '(python-mode-hook
                 go-mode-hook
                 ruby-mode-hook
-                php-mode-hook))
+                php-mode-hook
+                go-mode-hook))
   (add-hook hook 'flycheck-exclude-tramp))
 
 (defun-add-hook 'php-mode-hook

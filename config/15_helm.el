@@ -4,9 +4,8 @@
 
 (defun helm-my-default()
   (interactive)
-  (helm-other-buffer '(helm-c-source-buffers-list
-                       helm-c-source-recentf
-                       ;;helm-c-source-gtags-select
+  (helm-other-buffer '(helm-source-buffers-list
+                       helm-source-recentf
                        )
                      "*helm default*"))
 
@@ -53,3 +52,5 @@
                          (format "*helm git project in %s*" default-directory)))))
 
 ;; (global-set-key (kbd "C-;") 'helm-git-project)
+
+(setq helm-ff-transformer-show-only-basename nil)
