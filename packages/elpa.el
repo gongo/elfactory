@@ -36,8 +36,6 @@
              quickrun
              request
              rbenv
-             ruby-block
-             ruby-electric
              smartrep
              sr-speedbar
              textile-mode
