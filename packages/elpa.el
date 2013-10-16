@@ -35,6 +35,7 @@
              popwin
              quickrun
              request
+             rhtml-mode
              rbenv
              smartrep
              sr-speedbar
