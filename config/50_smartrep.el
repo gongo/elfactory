@@ -22,3 +22,9 @@
                             ("C-a" . 'mc/edit-beginnings-of-lines)
                             ("C-e" . 'mc/edit-ends-of-lines)
                             ("C-i" . 'mc/insert-numbers))))
+
+;; For flycheck
+(req flycheck
+     (smartrep-define-key
+         flycheck-mode-map "C-c !" '(("n" . 'flycheck-next-error)
+                                     ("p" . 'flycheck-previous-error))))
