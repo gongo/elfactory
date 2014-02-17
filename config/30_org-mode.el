@@ -92,7 +92,7 @@
 (global-set-key (kbd "C-c l") 'org-store-link)
 
 (customize-set-variable 'org-file-apps
-                        '(("pdf" . "evince %s")))
+                        '(("pdf" . "open %s")))
 
 (setq org-file-apps
       '((auto-mode . emacs)
@@ -101,37 +101,48 @@
         ("\\.pdf\\'" . "evince %s")))
 
 (setq org-export-latex-default-packages-alist
-      '(("AUTO" "inputenc" t)
-        ("T1" "fontenc" t)
-        ("" "fixltx2e" nil)
-        ("dvipdfmx" "graphicx" t)
+      '(("" luatexja nil)
+        ("" "graphicx" nil)
+        ("" "hyperref" nil)
         ("" "longtable" nil)
         ("" "float" nil)
-        ("" "wrapfig" nil)
-        ("" "soul" t)
         ("" "textcomp" t)
-        ("" "marvosym" t)
-        ("" "wasysym" t)
         ("" "latexsym" t)
         ("" "amssymb" t)
-        ("dvipdfmx" "hyperref" nil)
-        "\\tolerance=1000"))
+        ("" "ascmac" nil)
+        "\\newdimen\\tbaselineshift"))
+
+(setq org-export-latex-hyperref-options-format "\
+\\hypersetup{
+  colorlinks=true,
+  pdfkeywords={%s},
+  pdfsubject={%s},
+  pdfcreator={Emacs Org-mode version %s}}")
 
 (eval-after-load 'org-latex
   '(progn
+     (require 'org-special-blocks)
      (setq org-export-latex-classes
            (append org-export-latex-classes
                    '(
-                     ("jarticle"
-                      "\\documentclass{jsarticle}"
-                      ("\\section{%s}" . "\\section*{%s}")
-                      ("\\subsection{%s}" . "\\subsection*{%s}")
-                      ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
-                      ("\\paragraph{%s}" . "\\paragraph*{%s}")
-                      ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
-                      )
+                     ;; ("ltjsarticle"
+                     ;;  "\\documentclass{ltjsarticle}"
+                     ;;  ("\\section{%s}" . "\\section*{%s}")
+                     ;;  ("\\subsection{%s}" . "\\subsection*{%s}")
+                     ;;  ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                     ;;  ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                     ;;  ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
+                     ;;  )
+                     ;; ("beamer"
+                     ;;  "\\documentclass{beamer}"
+                     ;;  ("\\section{%s}" . "\\section*{%s}")
+                     ;;  ("\\subsection{%s}" . "\\subsection*{%s}")
+                     ;;  ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                     ;;  ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                     ;;  ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
+                     ;;  )
                      )
                    ))
      (setq org-latex-to-pdf-process
-           '("platex %b" "platex %b" "platex %b" "dvipdfmx %b"))
+           '("/usr/texbin/lualatex %b"))
      ))
