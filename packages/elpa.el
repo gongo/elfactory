@@ -5,6 +5,7 @@
 (package-refresh-contents)
 
 (dolist (p '(;; install elisps --
+             anything
              ace-jump-mode
              all-ext
              auto-complete
@@ -26,7 +27,6 @@
              helm-gtags
              key-combo
              markdown-mode
-             melpa
              multi-web-mode
              multiple-cursors
              open-junk-file
