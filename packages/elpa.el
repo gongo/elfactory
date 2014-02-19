@@ -37,6 +37,7 @@
              request
              rhtml-mode
              rbenv
+             rotate
              smartrep
              sr-speedbar
              textile-mode
