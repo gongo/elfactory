@@ -1,4 +1,0 @@
-(:name apribase-theme
-       :description "Custom face theme for Emacs"
-       :type http
-       :url "https://raw.github.com/apribase/dotfiles/master/.emacs.d/themes/apribase-theme.el")

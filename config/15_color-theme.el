@@ -1,3 +1,3 @@
 (add-to-list 'custom-theme-load-path
-             (el-get-package-directory "apribase-theme"))
+             (expand-file-name "~/.emacs.d/vendor"))
 (load-theme 'apribase t)
