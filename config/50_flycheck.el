@@ -17,5 +17,6 @@
   (add-hook hook 'flycheck-exclude-tramp))
 
 (defun-add-hook 'php-mode-hook
-  (setq flycheck-phpcs-standard "PSR2"))
+  (setq flycheck-phpcs-standard "PSR2")
+  (setq flycheck-phpmd-rulesets '("codesize" "controversial" "design" "naming" "unusedcode")))
 
