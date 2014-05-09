@@ -31,37 +31,24 @@
     |   |-- .
     |   |-- .
     |   `-- ex-window-system-config.el
-    |-- el-get-recipes
-    |   |-- anything-rdefs.rcp
-    |   |-- .
-    |   |-- .
-    |   `-- id-manager.rcp
     |-- init.el
     |-- script
     |   |-- clean.sh
     |   |-- deploy.sh
     |   |-- init.sh
     |   `-- vars.sh
-    |-- site-lisp
-    |   |-- elpa.el
-    |   `-- el-get.el
     `-- vendor
         |-- README.md
-        |-- el-get-install.el
         |-- .
         |-- .
         `-- init-loader.el
 
 - config/
     - User configuration elisp (using init-loader.el)
-- el-get-recipes/
-    - el-get recipe elisp (using el-get)
 - init.el
     - init file when boot emacs
 - script/
     - deploy script
-- packages
-    - List for Package Manager (package-install, el-get, ..)
 - vendor
     - Other elisp
 
@@ -73,7 +60,6 @@
       .. /home/gongo/.emacs.d/config
       .. /home/gongo/.emacs.d/init.el
       .. /home/gongo/.emacs.d/vendor
-      .. /home/gongo/.emacs.d/el-get-recipes
     $ make deploy-basic
     Cleaning /home/gongo/.emacs.d/config
     Deploying to /home/gongo/.emacs.d/config
@@ -99,12 +85,6 @@ Deploy to build a basic environment (anything, auto-complete. use package manage
 Deploy all user configuration lisp.
 
     $ make deploy-all
-
-## Use Package Manager
-
-    $ make install-elisp
-
-Install el-get and elpa file.
 
 ## License
 

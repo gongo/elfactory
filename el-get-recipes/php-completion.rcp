@@ -1,4 +1,0 @@
-(:name php-completion
-       :description "complete everything PHP with Anything.el"
-       :type emacswiki
-       :depends anything)
