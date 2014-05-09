@@ -2,6 +2,7 @@
 (source melpa)
 (source marmalade)
 
+(depends-on "init-loader")
 (depends-on "id-manager" :git "https://github.com/kiwanami/emacs-id-manager.git")
 (depends-on "anything")
 (depends-on "ace-jump-mode")
