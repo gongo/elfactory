@@ -9,6 +9,9 @@
 (when (file-exists-p "~/.emacs.d/.secrets.el")
   (load-file "~/.emacs.d/.secrets.el"))
 
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
 ;;---------------------------------------
 ;; load-path for config files
 ;;---------------------------------------
