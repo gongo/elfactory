@@ -17,3 +17,4 @@
 ;;---------------------------------------
 (require 'init-loader)
 (init-loader-load (expand-file-name "~/.emacs.d/config"))
+(require 'pallet)
