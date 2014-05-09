@@ -10,6 +10,7 @@
 (global-rbenv-mode)
 
 (defun-add-hook 'ruby-mode-hook
+  (setq ruby-insert-encoding-magic-comment nil)
   (req auto-complete-config
        (make-variable-buffer-local 'ac-sources)
        (setq ac-sources '(ac-source-filename
