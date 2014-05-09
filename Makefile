@@ -1,6 +1,4 @@
-EMACS=emacs
 EMACS_DIR=$(HOME)/.emacs.d
-EMACSINIT=$(EMACS_DIR)/init.el
 
 .PHONY: all
 all: deploy-basic
@@ -12,10 +10,7 @@ init:
 deploy-min:
 	@./script/deploy.sh min
 
-deploy-basic:
-	@./script/deploy.sh basic
-
-deploy-all:
+deploy:
 	@./script/deploy.sh all
 
 clean:

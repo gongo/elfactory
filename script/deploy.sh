@@ -17,16 +17,10 @@
 
   case $1 in
       min)
-          CONFIG_LIST=$CONFIG_LIST_MIN
-          ;;
-      basic)
-          CONFIG_LIST=$CONFIG_LIST_BASIC
+          CONFIG_LIST="$(ls ${FACTORY_CONFIG_DIR}/[^1-9]*.el)"
           ;;
       all)
-          CONFIG_LIST=$CONFIG_LIST_ALL
-          ;;
-      *)
-          CONFIG_LIST=$CONFIG_LIST_ALL
+          CONFIG_LIST="$(ls ${FACTORY_CONFIG_DIR}/*.el)"
           ;;
   esac
 

@@ -60,31 +60,21 @@
       .. /home/gongo/.emacs.d/config
       .. /home/gongo/.emacs.d/init.el
       .. /home/gongo/.emacs.d/vendor
-    $ make deploy-basic
+    
+    $ make deploy
     Cleaning /home/gongo/.emacs.d/config
     Deploying to /home/gongo/.emacs.d/config
     ... 00_defmacros.el
     ... 00_defvars.el
     ... (skip...)
-    ... 15_color-theme.el
 
-### minimum
-
-Deploy to build a minimal environment (encoding, keybind, etc environment. no use package manager).
+Deploy to build a minimal environment (encoding, keybind, etc environment).
 
     $ make deploy-min
 
-### basic
-
-Deploy to build a basic environment (anything, auto-complete. use package manager)
-
-    $ make deploy-basic
-
-### basic
-
 Deploy all user configuration lisp.
 
-    $ make deploy-all
+    $ make deploy
 
 ## License
 
