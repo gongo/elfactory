@@ -4,36 +4,6 @@
 (setq user-full-name "Wataru MIYAGUNI")
 (setq user-mail-address "gonngo@gmail.com")
 
-;;---------------------------------------
-;; シェル以外から実行した場合
-;; 環境変数 $PATH が引き継がれないため
-;; exec-path と同時にここで設定
-;;---------------------------------------
-(dolist (dir (list
-              (expand-file-name "~/bin")
-              (expand-file-name "~/.homebrew/bin")
-              (expand-file-name "~/.pythonbrew/bin")
-              (expand-file-name "~/bin/mew/bin")
-              (expand-file-name "~/bin/howm")
-              "/usr/local/bin"
-              ))
-  (when (file-exists-p dir)
-    (when (not (member dir exec-path))
-      (setq exec-path (append (list dir) exec-path)))
-    (setenv "PATH" (concat dir ":" (getenv "PATH")))))
-
-;;----------------------------------------
-;; LIBRARY_PATH も同じように
-;;----------------------------------------
-(let ((libenv (cond (darwin-p "DYLD_FALLBACK_LIBRARY_PATH")
-                    (linux-p  "LD_LIBRARY_PATH"))))
-  (dolist (dir (list
-                (expand-file-name "~/.homebrew/lib")
-                "/usr/local/lib"
-                ))
-    (when (file-exists-p dir)
-      (setenv libenv (concat dir ":" (getenv libenv))))))
-
 ;;----------------------------------------
 ;; proxy
 ;;----------------------------------------
