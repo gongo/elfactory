@@ -10,15 +10,14 @@
 
   echo "Deploy at"
 
-  if [ ! -d "$CONFIG_DIR" ]
-  then
+  if [ ! -d "$CONFIG_DIR" ] ; then
       mkdir "$CONFIG_DIR"
       echo "  .. ${CONFIG_DIR} create"
   else
       echo "  .. ${CONFIG_DIR} is already exists"
   fi
 
-  for i in init.el vendor el-get-recipes
+  for i in init.el vendor
   do
       TARGET="${EMACS_DIR}/${i}"
       if [ ! -h "${TARGET}" ]
