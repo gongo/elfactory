@@ -17,7 +17,7 @@
       echo "  .. ${CONFIG_DIR} is already exists"
   fi
 
-  for i in init.el vendor
+  for i in init.el vendor Cask
   do
       TARGET="${EMACS_DIR}/${i}"
       if [ ! -h "${TARGET}" ]
