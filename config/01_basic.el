@@ -163,6 +163,10 @@
 ;;------------------------------
 (when window-system (load-safe "ex-window-system-config.el"))
 
+;;------------------------------
+;; yen mark to backslash
+;;------------------------------
+(define-key global-map [?¥] [?\\])
 
 ;;------------------------------
 ;; 環境毎の設定
