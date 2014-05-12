@@ -22,7 +22,7 @@
 (depends-on "helm")
 (depends-on "helm-ag")
 (depends-on "helm-gtags")
-(depends-on "id-manager")
+(depends-on "id-manager" :git "https://github.com/kiwanami/emacs-id-manager.git")
 (depends-on "init-loader")
 (depends-on "key-combo")
 (depends-on "markdown-mode")
