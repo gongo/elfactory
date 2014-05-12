@@ -13,7 +13,8 @@
                 go-mode-hook
                 ruby-mode-hook
                 php-mode-hook
-                go-mode-hook))
+                go-mode-hook
+                puppet-mode-hook))
   (add-hook hook 'flycheck-exclude-tramp))
 
 (defun-add-hook 'php-mode-hook
