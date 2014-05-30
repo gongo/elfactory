@@ -2,7 +2,7 @@
 ;; 指定したフォントが存在すれば使用する
 ;;----------------------------------------
 (when (x-list-fonts "Ricty")
-  (let* ((size 15)
+  (let* ((size 16)
          (asciifont "Ricty")
          (jpfont "Ricty")
          (h (* size 10))
