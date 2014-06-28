@@ -22,6 +22,8 @@
 (depends-on "git-gutter")
 (depends-on "go-autocomplete")
 (depends-on "go-mode")
+(depends-on "go-eldoc")
+(depends-on "golint")
 (depends-on "golden-ratio")
 (depends-on "helm")
 (depends-on "helm-ag")

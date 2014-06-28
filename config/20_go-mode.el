@@ -1,5 +1,10 @@
 (require 'go-mode-load)
 (require 'go-autocomplete)
+(require 'auto-complete-config)
+
+(add-hook 'go-mode-hook 'go-eldoc-setup)
+
+(setq gofmt-command "goimports")
 
 (defun-add-hook 'go-mode-hook
   (setq c-basic-offset 4)
