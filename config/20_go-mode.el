@@ -1,10 +1,11 @@
-(require 'go-mode-load)
 (require 'go-autocomplete)
 (require 'auto-complete-config)
 
 (add-hook 'go-mode-hook 'go-eldoc-setup)
 
 (setq gofmt-command "goimports")
+
+(add-hook 'before-save-hook 'gofmt-before-save)
 
 (defun-add-hook 'go-mode-hook
   (setq c-basic-offset 4)
