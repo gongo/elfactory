@@ -10,6 +10,7 @@
 (depends-on "cask")
 (depends-on "coffee-mode")
 (depends-on "concurrent")
+(depends-on "crosshairs")
 (depends-on "dash")
 (depends-on "deferred")
 (depends-on "direx")
