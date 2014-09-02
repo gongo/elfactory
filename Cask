@@ -15,6 +15,7 @@
 (depends-on "deferred")
 (depends-on "direx")
 (depends-on "e2wm")
+(depends-on "emmet-mode")
 (depends-on "epl")
 (depends-on "exec-path-from-shell")
 (depends-on "expand-region")
