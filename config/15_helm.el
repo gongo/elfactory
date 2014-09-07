@@ -1,11 +1,13 @@
 (require 'helm-config)
 (require 'helm-gtags)
 (require 'helm-files)
+(require 'helm-ghq)
 
 (defun helm-my-default()
   (interactive)
   (helm-other-buffer '(helm-source-buffers-list
                        helm-source-recentf
+                       helm-source-ghq
                        )
                      "*helm default*"))
 
