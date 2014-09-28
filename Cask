@@ -4,7 +4,6 @@
 
 (depends-on "ace-jump-mode")
 (depends-on "all-ext")
-(depends-on "anything")
 (depends-on "auto-complete")
 (depends-on "cacoo")
 (depends-on "cask")
