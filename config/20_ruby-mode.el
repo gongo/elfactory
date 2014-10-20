@@ -5,7 +5,7 @@
                `((,ext . ruby-mode))
                t))
 
-(eval-after-load "ruby-mode"
+(eval-after-load 'ruby-mode
   '(progn
      (setq ruby-deep-indent-paren nil)))
 

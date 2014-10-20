@@ -1,4 +1,4 @@
-(eval-after-load "php-mode"
+(eval-after-load 'php-mode
   '(progn
      (setq phpcmp-global-enable-auto-update-tag-files t)))
 
