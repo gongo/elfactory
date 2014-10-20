@@ -1,8 +1,9 @@
 (require 'rbenv)
 
 (dolist (ext '("\\.rake\\'" "Rakefile\\'" "Gemfile\\'" "Guardfile\\'" "\\.gemspec\\'"))
-  (append-to-list auto-mode-alist
-                  `((,ext . ruby-mode))))
+  (add-to-list 'auto-mode-alist
+               `((,ext . ruby-mode))
+               t))
 
 (lazyload (ruby-mode) "ruby-mode"
           (setq ruby-deep-indent-paren nil))

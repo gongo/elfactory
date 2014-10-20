@@ -1,3 +1,3 @@
 (dolist (ext '("\\.rhtml\\'" "\\.erb\\'"))
-  (append-to-list auto-mode-alist
-                  `((,ext . rhtml-mode))))
+  (add-to-list 'auto-mode-alist
+               `((,ext . rhtml-mode)) t))

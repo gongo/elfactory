@@ -1,10 +1,11 @@
 (lazyload (php-mode) "php-mode"
           (setq phpcmp-global-enable-auto-update-tag-files t))
 
-(append-to-list auto-mode-alist
-                '(("\\.php\\'" . php-mode)
-                  ("\\.php3\\'" . php-mode)
-                  ("\\.inc\\'" . php-mode)))
+(add-to-list 'auto-mode-alist
+             '(("\\.php\\'" . php-mode)
+               ("\\.php3\\'" . php-mode)
+               ("\\.inc\\'" . php-mode))
+             t)
 
 (speedbar-add-supported-extension '("php" "inc" "php3"))
 
