@@ -5,8 +5,9 @@
                `((,ext . ruby-mode))
                t))
 
-(lazyload (ruby-mode) "ruby-mode"
-          (setq ruby-deep-indent-paren nil))
+(eval-after-load "ruby-mode"
+  '(progn
+     (setq ruby-deep-indent-paren nil)))
 
 (global-rbenv-mode)
 

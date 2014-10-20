@@ -1,5 +1,6 @@
-(lazyload (php-mode) "php-mode"
-          (setq phpcmp-global-enable-auto-update-tag-files t))
+(eval-after-load "php-mode"
+  '(progn
+     (setq phpcmp-global-enable-auto-update-tag-files t)))
 
 (add-to-list 'auto-mode-alist
              '(("\\.php\\'" . php-mode)
