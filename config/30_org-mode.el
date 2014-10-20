@@ -1,4 +1,3 @@
-(eval-when-compile (require 'cl)) 
 (require 'org)
 
 (setq
