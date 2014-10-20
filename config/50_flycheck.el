@@ -1,12 +1,10 @@
-(require 'flycheck)
-
 ;; see. http://fukuyama.co/tramp-flycheck
 ;; check tramp or root file
 (defun flycheck-exclude-tramp ()
   (unless (or (and (fboundp 'tramp-tramp-file-p)
                    (tramp-tramp-file-p buffer-file-name))
               (string-match "sudo:.*:" (buffer-file-name)))
-    (flycheck-mode t)
+    (flycheck-mode 1)
   ))
 
 (dolist (hook '(python-mode-hook
