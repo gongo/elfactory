@@ -1,13 +1,16 @@
 ;;---------------------------------------
 ;; load-path for elisp files
 ;;---------------------------------------
-(setq load-path
-      (append (list (expand-file-name "~/.emacs.d/site-lisp")
-		    (expand-file-name "~/.emacs.d/vendor"))
-	      load-path))
+;; emacs -l init.el等で直接ロードしたときに, user-emacs-directoryが書き換わる
+(when load-file-name
+  (setq user-emacs-directory (file-name-directory load-file-name)))
 
-(when (file-exists-p "~/.emacs.d/.secrets.el")
-  (load-file "~/.emacs.d/.secrets.el"))
+(dolist (dir '("site-lisp" "vendor"))
+  (add-to-list 'load-path (concat user-emacs-directory dir)))
+
+(let ((secret (concat user-emacs-directory ".secrets.el")))
+  (when (file-exists-p secret)
+    (load-file secret)))
 
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
@@ -16,4 +19,4 @@
 ;; load-path for config files
 ;;---------------------------------------
 (require 'init-loader)
-(init-loader-load (expand-file-name "~/.emacs.d/config"))
+(init-loader-load (concat user-emacs-directory "config"))
