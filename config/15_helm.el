@@ -11,7 +11,7 @@
                        )
                      "*helm default*"))
 
-(define-key global-map (kbd "C-x b") 'helm-my-default)
+(global-set-key (kbd "C-x b") 'helm-my-default)
 
 ;;------------------------------
 ;; helm-gtags
