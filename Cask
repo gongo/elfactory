@@ -12,7 +12,6 @@
 (depends-on "crosshairs")
 (depends-on "dash")
 (depends-on "deferred")
-(depends-on "direx")
 (depends-on "e2wm")
 (depends-on "emmet-mode")
 (depends-on "epl")
