@@ -3,10 +3,6 @@
 ;;
 ;;   ref. http://www.sodan.org/~knagano/emacs/dotemacs.html
 ;;----------------------------------------
-(defmacro exec-if-bound (sexplist)
-  "関数が存在する時だけ実行する。（car の fboundp を調べるだけ）"
-  `(if (fboundp (car ',sexplist)) ,sexplist))
-
 (defmacro defun-add-hook (hookname &rest sexplist)
   "add-hook のエイリアス。引数を関数にパックして hook に追加する。"
   `(add-hook ,hookname (function (lambda () ,@sexplist))))
@@ -18,12 +14,6 @@
     (or load-status
         (message (format "[load-safe] failed %s" loadlib)))
     load-status))
-
-(defmacro eval-safe (&rest body)
-  "安全な評価。評価に失敗してもそこで止まらない。"
-  `(condition-case err
-       (progn ,@body)
-     (error (message "[eval-safe] %s" err))))
 
 ;;----------------------------------------
 ;; いろいろマクロ
