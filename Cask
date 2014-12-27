@@ -1,7 +1,7 @@
 (source gnu)
-(source marmalade)
 (source melpa)
 
+(depends-on "apribase-theme" :git "https://github.com/apribase/apribase-theme-el.git")
 (depends-on "ace-jump-mode")
 (depends-on "all-ext")
 (depends-on "auto-complete")
