@@ -32,16 +32,11 @@
     |   |-- .
     |   `-- ex-window-system-config.el
     |-- init.el
-    |-- script
-    |   |-- clean.sh
-    |   |-- deploy.sh
-    |   |-- init.sh
-    |   `-- vars.sh
-    `-- vendor
-        |-- README.md
-        |-- .
-        |-- .
-        `-- init-loader.el
+    `-- script
+        |-- clean.sh
+        |-- deploy.sh
+        |-- init.sh
+        `-- vars.sh
 
 - config/
     - User configuration elisp (using init-loader.el)
@@ -49,8 +44,6 @@
     - init file when boot emacs
 - script/
     - deploy script
-- vendor
-    - Other elisp
 
 ## Deploy
 
@@ -59,8 +52,7 @@
     Deploy at
       .. /home/gongo/.emacs.d/config
       .. /home/gongo/.emacs.d/init.el
-      .. /home/gongo/.emacs.d/vendor
-    
+
     $ make deploy
     Cleaning /home/gongo/.emacs.d/config
     Deploying to /home/gongo/.emacs.d/config

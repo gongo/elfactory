@@ -5,7 +5,7 @@
 (when load-file-name
   (setq user-emacs-directory (file-name-directory load-file-name)))
 
-(dolist (dir '("site-lisp" "vendor"))
+(dolist (dir '("site-lisp"))
   (add-to-list 'load-path (concat user-emacs-directory dir)))
 
 (let ((secret (concat user-emacs-directory ".secrets.el")))
