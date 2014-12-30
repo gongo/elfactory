@@ -11,6 +11,7 @@
 (depends-on "concurrent")
 (depends-on "crosshairs")
 (depends-on "dash")
+(depends-on "ddskk")
 (depends-on "deferred")
 (depends-on "e2wm")
 (depends-on "emmet-mode")

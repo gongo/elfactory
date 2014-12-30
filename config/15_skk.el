@@ -1,6 +1,3 @@
-(add-to-list 'load-path (concat user-emacs-directory "site-lisp/skk/elisp"))
-(require 'skk-autoloads)
-
 (setq skk-server-portnum 1178)
 (setq skk-server-host "localhost")
 (setq skk-show-inline 'vertical)
