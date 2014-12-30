@@ -3,14 +3,8 @@
 (require 'helm-files)
 (require 'helm-ghq)
 
-(defun helm-my-default()
-  (interactive)
-  (helm-other-buffer '(helm-source-buffers-list
-                       helm-source-recentf
-                       )
-                     "*helm default*"))
-
-(global-set-key (kbd "C-x b") 'helm-my-default)
+(add-to-list 'helm-for-files-preferred-list 'helm-source-ghq)
+(global-set-key (kbd "C-x b") 'helm-for-files)
 
 ;;------------------------------
 ;; helm-gtags
