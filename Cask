@@ -27,6 +27,7 @@
 (depends-on "go-mode")
 (depends-on "golden-ratio")
 (depends-on "golint")
+(depends-on "google-translate")
 (depends-on "helm")
 (depends-on "helm-ag")
 (depends-on "helm-gtags")
