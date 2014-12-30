@@ -20,32 +20,4 @@
   (local-set-key (kbd "M-s") 'helm-gtags-find-rtag)
   (local-set-key (kbd "M-*") 'helm-gtags-pop-stack))
 
-;; List files in git repos
-(defun helm-c-sources-git-project-for (pwd)
-  `((name . ,(format "All controlled files in this project (%s)" pwd))
-    (init . (lambda ()
-              (with-current-buffer (helm-candidate-buffer 'global)
-                (call-process-shell-command "git ls-files" nil t nil))))
-    (candidates-in-buffer)
-    (candidate-transformer helm-w32-pathname-transformer)
-    (type . file)))
-
-(defun helm-git-project-topdir ()
-  (file-name-as-directory
-   (replace-regexp-in-string
-    "\n" ""
-    (shell-command-to-string "git rev-parse --show-toplevel"))))
-
-(defun helm-git-project ()
-  (interactive)
-  (let ((topdir (helm-git-project-topdir)))
-    (unless (file-directory-p topdir)
-      (error "I'm not in Git Repository!!"))
-    (let* ((default-directory topdir)
-           (sources (helm-c-sources-git-project-for default-directory)))
-      (helm-other-buffer sources
-                         (format "*helm git project in %s*" default-directory)))))
-
-;; (global-set-key (kbd "C-;") 'helm-git-project)
-
 (setq helm-ff-transformer-show-only-basename nil)
