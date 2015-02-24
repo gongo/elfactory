@@ -3,7 +3,7 @@
 (require 'helm-files)
 (require 'helm-ghq)
 
-(add-to-list 'helm-for-files-preferred-list 'helm-source-ghq)
+(setq helm-for-files-preferred-list '(helm-source-buffers-list helm-source-recentf helm-source-file-cache helm-source-files-in-current-dir))
 (global-set-key (kbd "C-x b") 'helm-for-files)
 
 ;;------------------------------
