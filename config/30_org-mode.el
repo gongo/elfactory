@@ -97,9 +97,9 @@
       '((auto-mode . emacs)
         ("\\.mm\\'" . default)
         ("\\.x?html?\\'" . default)
-        ("\\.pdf\\'" . "evince %s")))
+        ("\\.pdf\\'" . "open %s")))
 
-(setq org-export-latex-default-packages-alist
+(setq org-latex-default-packages-alist
       '(("" luatexja nil)
         ("" "graphicx" nil)
         ("" "hyperref" nil)
@@ -118,30 +118,8 @@
   pdfsubject={%s},
   pdfcreator={Emacs Org-mode version %s}}")
 
-(eval-after-load 'org-latex
-  '(progn
-     (require 'org-special-blocks)
-     (setq org-export-latex-classes
-           (append org-export-latex-classes
-                   '(
-                     ;; ("ltjsarticle"
-                     ;;  "\\documentclass{ltjsarticle}"
-                     ;;  ("\\section{%s}" . "\\section*{%s}")
-                     ;;  ("\\subsection{%s}" . "\\subsection*{%s}")
-                     ;;  ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
-                     ;;  ("\\paragraph{%s}" . "\\paragraph*{%s}")
-                     ;;  ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
-                     ;;  )
-                     ;; ("beamer"
-                     ;;  "\\documentclass{beamer}"
-                     ;;  ("\\section{%s}" . "\\section*{%s}")
-                     ;;  ("\\subsection{%s}" . "\\subsection*{%s}")
-                     ;;  ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
-                     ;;  ("\\paragraph{%s}" . "\\paragraph*{%s}")
-                     ;;  ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
-                     ;;  )
-                     )
-                   ))
-     (setq org-latex-to-pdf-process
+(req ox-latex
+     (require 'ox-beamer)
+     (setq org-latex-pdf-process
            '("/usr/texbin/lualatex %b"))
-     ))
+     )
