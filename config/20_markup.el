@@ -26,3 +26,13 @@
      (setq web-mode-code-indent-offset   4)
      (setq indent-tabs-mode nil)
      (setq tab-width 4)))
+
+;;
+;; terraform-mode
+;;--------------------
+(setq terraform-indent-level 4)
+
+;;
+;; markdown-mode
+;;--------------------
+(add-hook 'markdown-mode-hook 'orgtbl-mode)
