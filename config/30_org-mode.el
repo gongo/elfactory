@@ -75,7 +75,7 @@
  )
 
 (setq org-default-notes-file (concat org-directory "/.notes"))
-(setq org-agenda-files (loop for f in '("birthday" "newgtd" "private")
+(setq org-agenda-files (cl-loop for f in '("birthday" "newgtd" "private")
                              collect (format "%s/%s.org" org-directory f)))
 
 (defun gtd ()
