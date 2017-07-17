@@ -15,6 +15,11 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+;;----------------------------------------
+;; Suppress adding by package.el
+;;----------------------------------------
+(setq package--init-file-ensured t)
+
 ;;---------------------------------------
 ;; load-path for config files
 ;;---------------------------------------
