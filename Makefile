@@ -5,8 +5,10 @@ elfactory_files = Cask init.el config
 
 link:
 	@for f in $(elfactory_files); do \
-		ln -sf "$(elfactory_dir)/$${f}" "$(EMACS_DIR)/$${f}" ; \
-		echo "Link $(elfactory_dir)/$${f} => $(EMACS_DIR)/$${f}" ; \
+		if [ ! -L "$(EMACS_DIR)/$${f}" ] ; then \
+			ln -sf "$(elfactory_dir)/$${f}" "$(EMACS_DIR)/$${f}" ; \
+			echo "Link $(elfactory_dir)/$${f} => $(EMACS_DIR)/$${f}" ; \
+		fi \
 	done
 
 unlink:
