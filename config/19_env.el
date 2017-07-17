@@ -1,8 +1,4 @@
-;; ここちょっと納得いかないけど……
-(setenv "SHELL"
-        (cond
-         (linux-p "/usr/bin/zsh")
-         (t (concat (getenv "HOMEBREW_ROOT") "/bin/zsh"))))
+(setq exec-path-from-shell-shell-name "zsh")
 
 (when (memq window-system '(mac ns x))
   (let* ((libenv (cond (darwin-p "DYLD_FALLBACK_LIBRARY_PATH")
