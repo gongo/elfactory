@@ -37,4 +37,4 @@ $ EMACS_DIR=/path/to/dir make unlink
 
 ## License
 
-This project is licensed under the MAHALO License. See LICENSE for details.
+MIT License
