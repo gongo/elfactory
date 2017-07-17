@@ -1,72 +1,39 @@
-# .emacs.d deploy system for [gongo](http://gongo.github.com/)
+.emacs.d deploy system for [gongo](http://gongo.github.com/)
+================================================================================
 
-## Environment
+Environment
+--------------------------------------------------
 
 - Emacs 24.0+ (Mac OS X, Linux)
 - bash
 
-## Setup
+Usage
+--------------------------------------------------
 
-    $ [ -d $HOME/.emacs.d ] || mkdir $HOME/.emacs.d
-    $ cd $HOME/.emacs.d
-    $ git clone git://github.com/gongo/elfactory.git
+Install (Create Symbolic link):
 
-## Shortest Deploy
+```console
+$ make link
+Link /Users/gongo/src/elfactory//Cask => /Users/gongo/.emacs.d//Cask
+Link /Users/gongo/src/elfactory//init.el => /Users/gongo/.emacs.d//init.el
+Link /Users/gongo/src/elfactory//config => /Users/gongo/.emacs.d//config
+```
 
-    $ cd $HOME/.emacs.d/elfactory
-    $ make init deploy-all install-elisp
+Uninstall (Remove symbolic link):
 
-*For more information about the following.*
+```console
+$ make unlink
+Unlink /Users/gongo/.emacs.d/Cask
+Unlink /Users/gongo/.emacs.d/init.el
+Unlink /Users/gongo/.emacs.d/config
+```
 
-## Tree
+If you want to change the installation directory:
 
-    .
-    |-- LICENSE
-    |-- Makefile
-    |-- README.mkdn
-    |-- config
-    |   |-- 00_defmacros.el
-    |   |-- 00_defvars.el
-    |   |-- 01_basic.el
-    |   |-- .
-    |   |-- .
-    |   `-- ex-window-system-config.el
-    |-- init.el
-    `-- script
-        |-- clean.sh
-        |-- deploy.sh
-        |-- init.sh
-        `-- vars.sh
-
-- config/
-    - User configuration elisp (using init-loader.el)
-- init.el
-    - init file when boot emacs
-- script/
-    - deploy script
-
-## Deploy
-
-    $ cd $HOME/.emacs.d/elfactory
-    $ make init
-    Deploy at
-      .. /home/gongo/.emacs.d/config
-      .. /home/gongo/.emacs.d/init.el
-
-    $ make deploy
-    Cleaning /home/gongo/.emacs.d/config
-    Deploying to /home/gongo/.emacs.d/config
-    ... 00_defmacros.el
-    ... 00_defvars.el
-    ... (skip...)
-
-Deploy to build a minimal environment (encoding, keybind, etc environment).
-
-    $ make deploy-min
-
-Deploy all user configuration lisp.
-
-    $ make deploy
+```console
+$ EMACS_DIR=/path/to/dir make link
+$ EMACS_DIR=/path/to/dir make unlink
+```
 
 ## License
 

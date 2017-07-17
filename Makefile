@@ -1,17 +1,20 @@
-EMACS_DIR=$(HOME)/.emacs.d
+EMACS_DIR ?= $(HOME)/.emacs.d/
 
-.PHONY: all
-all: deploy-basic
+elfactory_dir = $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
+elfactory_files = Cask init.el config
 
-.PHONY: init
-init:
-	@./script/init.sh
+link:
+	@for f in $(elfactory_files); do \
+		ln -sf "$(elfactory_dir)/$${f}" "$(EMACS_DIR)/$${f}" ; \
+		echo "Link $(elfactory_dir)/$${f} => $(EMACS_DIR)/$${f}" ; \
+	done
 
-deploy-min:
-	@./script/deploy.sh min
-
-deploy:
-	@./script/deploy.sh all
-
-clean:
-	@./script/clean.sh
+unlink:
+	@for f in $(addprefix $(EMACS_DIR)/,$(elfactory_files)) ; do \
+		if [ -L "$${f}" ] ; then \
+			rm "$${f}" ; \
+			echo "Unlink $${f}"; \
+		else \
+			echo "[Warning] $${f}: This file does not exist or is not symlink" ; \
+		fi \
+	done
