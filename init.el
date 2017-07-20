@@ -21,7 +21,7 @@
 ;;----------------------------------------
 ;; Suppress adding by package.el
 ;;----------------------------------------
-(setq package--init-file-ensured t)
+;; (package-initialize)
 
 ;;---------------------------------------
 ;; load-path for config files
